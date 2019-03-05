@@ -11,7 +11,7 @@ class Admin_Controller extends Master_Controller
 		// check login
 		if(user_login()->id == "") redirect('admin');
 		
-		$this->template->set_theme('admin');
+		$this->template->set_theme('AdminLTE-3.0.0-alpha.2');
 		
 		// Set layout
 		$this->template->set_layout('layout');
