@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1>HILIGHTS</h1>
+                <h1>PROMOTIONS</h1>
             </div>
         </div>
     </div><!-- /.container-fluid -->
@@ -13,34 +13,30 @@
 <section class="content">
 
     <div id="btnBox" align="right" style="margin-bottom:10px;">
-        <input type="button" title="เพิ่มรายการ" value="เพิ่มรายการ" onclick="document.location='admin/hilights/form'" class="btn btn-primary" />
+        <input type="button" title="เพิ่มรายการ" value="เพิ่มรายการ" onclick="document.location='admin/promotions/form'" class="btn btn-primary" />
     </div>
 
     <div class="card card-info card-outline">
         <div class="card-header">
-            <h3 class="card-title">ไฮไลท์</h3>
+            <h3 class="card-title">โปรโมชั่น</h3>
         </div>
         <!-- /.card-header -->
         <div class="card-body">
             <table class="table table-bordered">
                 <tr>
                     <th style="width: 10px">#</th>
-                    <th>รูป (ภาษาไทย)</th>
-                    <th>รูป (ภาษาอังกฤษ)</th>
-                    <th>ลิ้งค์รูป</th>
+                    <th>หัวข้อ</th>
                     <th width="150">จัดการ</th>
                 </tr>
                 <?foreach($rs as $key=>$row):?>
                 <tr>
                     <td><?=($key+1)+$rs->paged->current_row?></td>
-                    <td><?if($row->img_th):?><img src="uploads/hilight/<?=$row->img_th?>" width="350"><?endif;?></td>
-                    <td><?if($row->img_en):?><img src="uploads/hilight/<?=$row->img_en?>" width="350"><?endif;?></td>
-                    <td><?php echo $row->url?></td>
+                    <td><?php echo $row->title_th?></td>
                     <td>
-                        <a href="admin/hilights/form/<?=$row->id?>">
+                        <a href="admin/promotions/form/<?=$row->id?>">
                             <button type="button" class="btn btn-secondary btn-sm">แก้ไข</button>
                         </a>
-                        <a href="admin/hilights/delete/<?=$row->id?>">
+                        <a href="admin/promotions/delete/<?=$row->id?>">
                             <button type="button" class="btn btn-secondary btn-sm" onclick="return confirm('<?php echo lang('notice_confirm_delete');?>')">ลบ</button>
                         </a>
                     </td>
@@ -50,6 +46,13 @@
         </div>
         <!-- /.card-body -->
         <div class="card-footer clearfix">
+            <!-- <ul class="pagination pagination-sm m-0 float-right">
+                <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+            </ul> -->
             <?php echo $rs->pagination()?>
         </div>
     </div>

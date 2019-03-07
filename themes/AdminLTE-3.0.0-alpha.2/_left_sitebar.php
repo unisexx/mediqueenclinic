@@ -28,17 +28,17 @@
             with font-awesome or any other icon font library -->
         
         <li class="nav-header">หน้าแรก</li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a href="../widgets.html" class="nav-link">
                 <i class="nav-icon fa fa-th"></i>
                 <p>ที่อยู่</p>
             </a>
-        </li>
+        </li> -->
 
         <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="admin/hilights" class="nav-link">
                 <i class="nav-icon fa fa-th"></i>
-                <p>ไฮไลท์</p>
+                <p>HILIGHTS</p>
             </a>
         </li>
 
@@ -80,14 +80,14 @@
 
         <li class="nav-header">หน้าอื่นๆ</li>
         <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="admin/abouts/form/1" class="nav-link">
                 <i class="nav-icon fa fa-th"></i>
                 <p>ABOUT</p>
             </a>
         </li>
 
         <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="admin/promotions" class="nav-link">
                 <i class="nav-icon fa fa-th"></i>
                 <p>PROMOTIONS</p>
             </a>
