@@ -43,37 +43,37 @@
         </li>
 
         <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="admin/service_categories" class="nav-link">
                 <i class="nav-icon fa fa-th"></i>
-                <p>SERVICES</p>
+                <p>SERVICE CATEGORIES</p>
             </a>
         </li>
 
         <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="admin/promotion_lists" class="nav-link">
                 <i class="nav-icon fa fa-th"></i>
-                <p>PROMOTION รายการ</p>
+                <p>PROMOTION LISTS</p>
             </a>
         </li>
         
         <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="admin/promotion_hilights" class="nav-link">
                 <i class="nav-icon fa fa-th"></i>
-                <p>PROMOTION ไฮไลท์</p>
+                <p>PROMOTION HILIGHTS</p>
             </a>
         </li>
 
         <li class="nav-item">
             <a href="../widgets.html" class="nav-link">
                 <i class="nav-icon fa fa-th"></i>
-                <p>REVIEWS รูป</p>
+                <p>REVIEWS IMAGE</p>
             </a>
         </li>
 
         <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="admin/review_videos" class="nav-link">
                 <i class="nav-icon fa fa-th"></i>
-                <p>REVIEWS วิดีโอ</p>
+                <p>REVIEWS VIDEO</p>
             </a>
         </li>
 
