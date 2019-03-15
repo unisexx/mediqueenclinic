@@ -64,7 +64,7 @@
         </li>
 
         <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="admin/review_images" class="nav-link">
                 <i class="nav-icon fa fa-th"></i>
                 <p>REVIEWS IMAGE</p>
             </a>

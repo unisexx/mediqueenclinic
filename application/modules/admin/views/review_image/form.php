@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1>PROMOTION LISTS</h1>
+                <h1>REVIEWS IMAGE</h1>
             </div>
         </div>
     </div><!-- /.container-fluid -->
@@ -12,12 +12,12 @@
 <!-- Main content -->
 <section class="content">
 
-    <form class="form-horizontal" method="post" action="admin/promotion_lists/save/<?=$rs->id?>" enctype="multipart/form-data" style="padding-bottom:20px;">
+    <form class="form-horizontal" method="post" action="admin/review_images/save/<?=$rs->id?>" enctype="multipart/form-data" style="padding-bottom:20px;">
     
     <!-- ฟอร์มที่ใช้ร่วมกัน -->
     <div class="card card-info card-outline">
         <div class="card-header">
-            <h3 class="card-title">โปรโมชั่น (เพิ่ม / แก้ไข)</h3>
+            <h3 class="card-title">อัลบัม (เพิ่ม / แก้ไข)</h3>
         </div>
         <div class="card-body">
 
@@ -31,22 +31,26 @@
                 <input name="title_en" value="<?php echo @$rs->title_en?>" type="text" class="form-control">
             </div>
 
-            <button id="addList" type="button" class="btn btn-success btn-sm" style="margin-bottom:10px;">เพิ่มลิสต์รายการ</button>
+            <div class="form-group">
+                <label>อัพโหลดรูป (เลือกได้พร้อมกันหลายรูป)</label>
+                <input name="filUpload[]" type="file" class="form-control" multiple>
+            </div>
+
+            <!-- <button id="addList" type="button" class="btn btn-success btn-sm" style="margin-bottom:10px;">เพิ่มลิสต์รายการ</button> -->
             
             <table id="tbList" class="table table-bordered">
                 <thead>
                     <tr>
-                        <th>หัวข้อ (ภาษาไทย)</th>
-                        <th>หัวข้อ (ภาษาอังกฤษ)</th>
-                        <th>ราคา</th>
+                        <th>รูป</th>
                         <th width="150">จัดการ</th>
                     </tr>
-                    <?php foreach($rs->promotion_list_detail->get() as $item):?>
+                    <?php foreach($rs->review_image_detail->get() as $item):?>
                     <tr>
-                        <td><input name="name_th[]" type="text" class="form-control" value="<?php echo $item->title_th?>"></td>
-                        <td><input name="name_en[]" type="text" class="form-control" value="<?php echo $item->title_en?>"></td>
-                        <td><input name="price[]" type="text" class="form-control" value="<?php echo $item->price?>"></td>
-                        <td><button type="button" class="btn btn-secondary btn-sm delList">ลบ</button></td>
+                        <td><img src="uploads/review_image/<?php echo $rs->id?>/<?php echo $item->image?>" width="200"></td>
+                        <td>
+                            <input type="hidden" name="oldImage[]" value="<?php echo $item->image?>">
+                            <button type="button" class="btn btn-secondary btn-sm delList">ลบ</button>
+                        </td>
                     </tr>
                     <?php endforeach;?>
                 </thead>
@@ -73,8 +77,6 @@ $(document).ready(function(){
         var txt = '';
             txt += '<tr>'
                     +'<td><input name="name_th[]" type="text" class="form-control"></td>'
-                    +'<td><input name="name_en[]" type="text" class="form-control"></td>'
-                    +'<td><input name="price[]" type="text" class="form-control"></td>'
                     +'<td><button type="button" class="btn btn-secondary btn-sm delList">ลบ</button></td>'
                     +'</tr>';
         $('#tbList tbody').append(txt);
