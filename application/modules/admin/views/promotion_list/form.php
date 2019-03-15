@@ -12,7 +12,7 @@
 <!-- Main content -->
 <section class="content">
 
-    <form class="form-horizontal" method="post" action="admin/promotions/save/<?=$rs->id?>" enctype="multipart/form-data" style="padding-bottom:20px;">
+    <form class="form-horizontal" method="post" action="admin/promotion_lists/save/<?=$rs->id?>" enctype="multipart/form-data" style="padding-bottom:20px;">
     
     <!-- ฟอร์มที่ใช้ร่วมกัน -->
     <div class="card card-info card-outline">
@@ -41,6 +41,14 @@
                         <th>ราคา</th>
                         <th width="150">จัดการ</th>
                     </tr>
+                    <?php foreach($rs->promotion_list_detail->get() as $item):?>
+                    <tr>
+                        <td><input name="name_th[]" type="text" class="form-control" value="<?php echo $item->title_th?>"></td>
+                        <td><input name="name_en[]" type="text" class="form-control" value="<?php echo $item->title_en?>"></td>
+                        <td><input name="price[]" type="text" class="form-control" value="<?php echo $item->price?>"></td>
+                        <td><button type="button" class="btn btn-secondary btn-sm delList">ลบ</button></td>
+                    </tr>
+                    <?php endforeach;?>
                 </thead>
                 <tbody>
                 </tbody>

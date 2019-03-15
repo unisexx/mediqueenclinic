@@ -26,17 +26,24 @@ class Promotion_lists extends Admin_Controller {
 		if($_POST){
 
 			$rs = new promotion_list($id);
-			
-			if($_FILES['imgUpload']['name'])
-			{
-				if($rs->id){
-					$rs->delete_file($rs->id,'uploads/promotion_list','imgUpload');
-				}
-				$_POST['image'] = $rs->upload($_FILES['imgUpload'],'uploads/promotion_list/');
-			}
-			
 			$rs->from_array($_POST);
 			$rs->save();
+			$last_id = $rs->id;
+
+			// ลบทั้งหมดแล้วบันทึกใหม่
+			$this->db->delete('promotion_list_details', array('promotion_list_id' => $last_id)); 
+
+			if(isset($_POST['name_th'])){
+				foreach($_POST['name_th'] as $key=>$item){
+					$p                    = new promotion_list_detail();
+					$p->promotion_list_id = $last_id;
+					$p->title_th          = $_POST['name_th'][$key];
+					$p->title_en          = $_POST['name_en'][$key];
+					$p->price             = $_POST['price'][$key];
+					$p->save();
+				}
+			}
+			
 			set_notify('success', 'บันทึกข้อมูลเรียบร้อย');
 		}
 		redirect('admin/promotion_lists');
