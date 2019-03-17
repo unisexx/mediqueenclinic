@@ -16,12 +16,12 @@
     <!-- ฟอร์มภาษาไทย -->
     <div class="card card-info card-outline">
         <div class="card-header">
-            <h3 class="card-title">ภาษาไทย</h3>
+            <h3 class="card-title">ติดต่อ</h3>
         </div>
         <div class="card-body">
             
             <div class="form-group">
-                <label class="col-sm-2 control-label">ที่อยู่</label>
+                <label class="col-sm-2 control-label">ที่อยู่ (ภาษาไทย)</label>
 
                 <div class="col-sm-12">
                     <textarea name="address_th" class="form-control tinymce" rows="5"><?php echo @$rs->address_th?></textarea>
@@ -29,7 +29,15 @@
             </div>
 
             <div class="form-group">
-                <label class="col-sm-2 control-label">เบอร์โทรศัพท์</label>
+                <label class="col-sm-2 control-label">ที่อยู่ (ภาษาอังกฤษ)</label>
+
+                <div class="col-sm-12">
+                    <textarea name="address_en" class="form-control tinymce" rows="5"><?php echo @$rs->address_en?></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">เบอร์โทรศัพท์ (ภาษาไทย)</label>
 
                 <div class="col-sm-12">
                     <textarea name="tel_th" class="form-control tinymce" rows="5"><?php echo @$rs->tel_th?></textarea>
@@ -37,10 +45,26 @@
             </div>
 
             <div class="form-group">
-                <label class="col-sm-2 control-label">เวลาทำการ</label>
+                <label class="col-sm-2 control-label">เบอร์โทรศัพท์ (ภาษาอังกฤษ)</label>
+
+                <div class="col-sm-12">
+                    <textarea name="tel_en" class="form-control tinymce" rows="5"><?php echo @$rs->tel_en?></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">เวลาทำการ (ภาษาไทย)</label>
 
                 <div class="col-sm-12">
                     <textarea name="time_th" class="form-control tinymce" rows="5"><?php echo @$rs->time_th?></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">เวลาทำการ (ภาษาอังกฤษ)</label>
+
+                <div class="col-sm-12">
+                    <textarea name="time_en" class="form-control tinymce" rows="5"><?php echo @$rs->time_en?></textarea>
                 </div>
             </div>
             
@@ -49,41 +73,6 @@
         
     </div>
     <!-- /.card -->
-
-    <!-- ฟอร์มภาษาอังกฤษ -->
-    <div class="card card-warning card-outline">
-        <div class="card-header">
-            <h3 class="card-title">ภาษาอังกฤษ</h3>
-        </div>
-        <div class="card-body">
-            
-            <div class="form-group">
-                <label class="col-sm-2 control-label">ที่อยู่</label>
-
-                <div class="col-sm-12">
-                    <textarea name="address_en" class="form-control tinymce" rows="5"><?php echo @$rs->address_en?></textarea>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label class="col-sm-2 control-label">เบอร์โทรศัพท์</label>
-
-                <div class="col-sm-12">
-                    <textarea name="tel_en" class="form-control tinymce" rows="5"><?php echo @$rs->tel_en?></textarea>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label class="col-sm-2 control-label">เวลาทำการ</label>
-
-                <div class="col-sm-12">
-                    <textarea name="time_en" class="form-control tinymce" rows="5"><?php echo @$rs->time_en?></textarea>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.card-body -->
-    </div>
 
     <button type="submit" class="btn btn-primary">บันทึกข้อมูล</button>
 

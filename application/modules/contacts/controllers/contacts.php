@@ -1,5 +1,5 @@
 <?php
-class Abouts extends Public_Controller {
+class Contacts extends Public_Controller {
 
 	function __construct()
 	{
@@ -8,7 +8,7 @@ class Abouts extends Public_Controller {
 
 	function index()
 	{
-		$data['rs'] = new about();
+		$data['rs'] = new contact();
 		$data['rs'] = $data['rs']->order_by('id','desc')->limit(1)->get();
 		$this->template->build('index',$data);
 	}
