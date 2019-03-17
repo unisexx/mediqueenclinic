@@ -80,7 +80,7 @@
             </div>
 
             <div class="form-group">
-                <label>วีดีโอแนะนำตัว (youtube)</label>
+                <label>วีดีโอแนะนำตัว (youtube embed link) ตัวอย่าง https://www.youtube.com/embed/QTO65nAxKG4</label>
                 <input name="youtube" value="<?php echo @$rs->youtube?>" type="text" class="form-control">
             </div>
             

@@ -19,7 +19,7 @@ class Public_Controller extends Master_Controller
             $this->lang->load('public','english');
         }
 
-		$this->template->set_theme('law');
+		$this->template->set_theme('mediqueenclinic');
 
 		// Set layout
 		$this->template->set_layout('layout');

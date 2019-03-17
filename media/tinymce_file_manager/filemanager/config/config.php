@@ -74,7 +74,7 @@ $config = array(
 	| with start and final /
 	|
 	*/
-	'upload_dir' => '/party/public/js/tinymce_file_manager/source/',
+	'upload_dir' => '/mediqueenclinic/media/tinymce_file_manager/source/',
 	/*
 	|--------------------------------------------------------------------------
 	| relative path from filemanager folder to upload folder
