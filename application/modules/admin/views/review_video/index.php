@@ -27,7 +27,7 @@
                     <th style="width: 10px">#</th>
                     <th>หัวข้อ (ภาษาไทย)</th>
                     <th>หัวข้อ (ภาษาอังกฤษ)</th>
-                    <th>ลิ้งค์ youtube</th>
+                    <th>youtube</th>
                     <th width="150">จัดการ</th>
                 </tr>
                 <?foreach($rs as $key=>$row):?>

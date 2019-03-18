@@ -28,7 +28,7 @@
         <div class="col-sm-6 media3">
             <div class="col-sm-11 mx-auto">
                 <div class="intro_vdo">วีดีโอแนะนำตัว <?php echo $row->name_th?></div>
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/QTO65nAxKG4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/<?php echo getYoutubeID($row->youtube)?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
         </div>

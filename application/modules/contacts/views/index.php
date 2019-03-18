@@ -13,7 +13,8 @@
         <div class="col-sm-4">
             <img src="themes/mediqueenclinic/images/icon-mark.png" alt=""><?php echo $rs->address_th?>
         </div>
-        <div class="col-sm-4"><img src="themes/mediqueenclinic/images/icon-phone.png" alt=""><?php echo $rs->tel_th?>
+        <div class="col-sm-4">
+            <img src="themes/mediqueenclinic/images/icon-phone.png" alt=""><?php echo $rs->tel_th?>
         </div>
         <div class="col-sm-4">
             <img src="themes/mediqueenclinic/images/icon-time.png" alt=""><?php echo $rs->time_th?>
