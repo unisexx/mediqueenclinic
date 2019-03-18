@@ -246,8 +246,8 @@
                 <div class='carousel-inner inner-review'>
                     <?php foreach($review_image->review_image_detail->get() as $key => $row):?>
                     <div class='carousel-item <?php echo $key == 0 ? 'active' : ''; ?>'>
-                        <a href="uploads/review_image/<?php echo $row->review_image_id?>/<?php echo $row->image?>" data-toggle="lightbox">
-                            <img src='uploads/review_image/<?php echo $row->review_image_id?>/<?php echo $row->image?>' alt='' width="438" height="347">
+                        <a href="uploads/review_image/<?php echo $row->review_image_id?>/<?php echo $row->image?>" data-toggle="lightbox" class="img-review">
+                            <img src='uploads/review_image/<?php echo $row->review_image_id?>/<?php echo $row->image?>' alt=''>
                         </a>
                     </div>
                     <?php endforeach;?>

@@ -29,7 +29,7 @@ class Home extends Public_Controller {
 		$data['doctor'] = $data['doctor']->order_by('id','desc')->get();
 
 		$data['review_image'] = new review_image();
-		$data['review_image'] = $data['review_image']->order_by('id','asc')->limit(1)->get();
+		$data['review_image'] = $data['review_image']->order_by('id','desc')->limit(1)->get();
 
 		$data['review_video'] = new review_video();
 		$data['review_video'] = $data['review_video']->order_by('id','desc')->get();
