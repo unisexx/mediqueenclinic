@@ -39,7 +39,7 @@ class Review_images extends Admin_Controller {
 				$picture = new review_image_detail(@$_POST['picture_id'][$key]);
 				if($image['name'])
 				{
-					$picture->image = $picture->upload($image,'uploads/review_image/'.$last_id);
+					$picture->image = @$picture->upload($image,'uploads/review_image/'.$last_id);
 					$picture->review_image_id = $last_id;
 					$picture->save();
 				}

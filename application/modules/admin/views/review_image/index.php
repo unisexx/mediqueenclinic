@@ -25,13 +25,15 @@
             <table class="table table-bordered">
                 <tr>
                     <th style="width: 10px">#</th>
-                    <th>หัวข้อ</th>
+                    <th>หัวข้อ (ภาษาไทย)</th>
+                    <th>หัวข้อ (ภาษาอังกฤษ)</th>
                     <th width="150">จัดการ</th>
                 </tr>
                 <?foreach($rs as $key=>$row):?>
                 <tr>
                     <td><?=($key+1)+$rs->paged->current_row?></td>
                     <td><?php echo $row->title_th?></td>
+                    <td><?php echo $row->title_en?></td>
                     <td>
                         <a href="admin/review_images/form/<?=$row->id?>">
                             <button type="button" class="btn btn-secondary btn-sm">แก้ไข</button>
