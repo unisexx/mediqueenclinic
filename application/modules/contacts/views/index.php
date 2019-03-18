@@ -1,23 +1,23 @@
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb bread">
-        <li class="breadcrumb-item"><a href="home">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Contact</li>
+        <li class="breadcrumb-item"><a href="home"><?php echo lang('h_home')?></a></li>
+        <li class="breadcrumb-item active" aria-current="page"><?php echo lang('h_contact')?></li>
     </ol>
 </nav>
 <div class="col-sm-12"></div>
-<div class="title_page">CONTACT</div>
-<div class="title_page2">ติดต่อ</div>
+<div class="title_page"><?php echo lang('h_contact')?></div>
+<div class="title_page2"></div>
 <div class="clearfix tall2"></div>
 <div class="container">
     <div class="row">
         <div class="col-sm-4">
-            <img src="themes/mediqueenclinic/images/icon-mark.png" alt=""><?php echo $rs->address_th?>
+            <img src="themes/mediqueenclinic/images/icon-mark.png" alt=""><?php echo $rs->{'address_'.@$this->session->userdata('lang')}?>
         </div>
         <div class="col-sm-4">
-            <img src="themes/mediqueenclinic/images/icon-phone.png" alt=""><?php echo $rs->tel_th?>
+            <img src="themes/mediqueenclinic/images/icon-phone.png" alt=""><?php echo $rs->{'tel_'.@$this->session->userdata('lang')}?>
         </div>
         <div class="col-sm-4">
-            <img src="themes/mediqueenclinic/images/icon-time.png" alt=""><?php echo $rs->time_th?>
+            <img src="themes/mediqueenclinic/images/icon-time.png" alt=""><?php echo $rs->{'time_'.@$this->session->userdata('lang')}?>
         </div>
     </div>
     <div class="clearfix tall2"></div>
@@ -31,20 +31,23 @@
         <div class="col-sm-3 col-xs-12"><img src="themes/mediqueenclinic/images/map2.jpg" alt="" class="box-map"></div>
     </div>
     <div class="row">
-        <div class="title_page2" style="margin-left: -40px;">ส่งข้อความถึงเรา</div>
+        <div class="title_page2" style="margin-left: -40px;"><?php echo lang('send_us')?></div>
     </div><br>
-    <form method="post" action="">
+    <form method="post" action="contacts/save">
         <div class="row">
             <div class="col-sm-6">
-                <div class="form-group"><input type="text" class="form-control contact-input" id="" placeholder="NAME *"></div>
+                <div class="form-group"><input type="text" class="form-control contact-input" id="" placeholder="<?php echo lang('name')?> *"></div>
                 <div class="form-group"></div><input type="email" class="form-control contact-input" id="email"
-                    placeholder="E-MAIL *">
-                <div class="form-group"></div><input type="text" class="form-control contact-input" id="" placeholder="PHONE *">
+                    placeholder="<?php echo lang('email')?> *">
+                <div class="form-group"></div><input type="text" class="form-control contact-input" id="" placeholder="<?php echo lang('tel')?> *">
             </div>
             <div class="col-sm-6 contact-textarea">
-                <div class="form-group"><textarea class="form-control contact-input" rows="6" placeholder="Message *"
-                        id="" name="message"></textarea></div>
-                <button class="btn btn-send" type="submit">SUBMIT NOW</button>
+                <div class="form-group"><textarea class="form-control contact-input" rows="6" placeholder="<?php echo lang('message')?> *" id="" name="message"></textarea></div>
+                <div class="form-group">
+                    <img src="users/captcha" /><br>
+                    <input type="text" name="captcha" class="captcha" style="width:104px;" placeholder="<?php echo lang('captcha')?> *">
+                </div>
+                <button class="btn btn-send" type="submit"><?php echo lang('submit')?></button>
             </div>
         </div>
     </form>

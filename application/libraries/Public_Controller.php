@@ -17,15 +17,12 @@ class Public_Controller extends Master_Controller
             $this->lang->load('public','thai');
         }elseif(@$this->session->userdata('lang') == "en"){
             $this->lang->load('public','english');
-        }
+		}
 
 		$this->template->set_theme('mediqueenclinic');
 
 		// Set layout
 		$this->template->set_layout('layout');
-
-		// Set Default Language
-		// $this->session->set_userdata('lang','th');
 
 		// Set js
 		$this->template->append_metadata(js_notify());

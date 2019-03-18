@@ -17,25 +17,25 @@
             <div class="collapse navbar-collapse topmenu" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="home"><?php echo lang('h_home')?><span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="abouts">ABOUT</a>
+                        <a class="nav-link" href="abouts"><?php echo lang('h_about')?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="promotions">Promotions</a>
+                        <a class="nav-link" href="promotions"><?php echo lang('h_promotion')?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services">Services</a>
+                        <a class="nav-link" href="services"><?php echo lang('h_service')?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="doctors">Doctors</a>
+                        <a class="nav-link" href="doctors"><?php echo lang('h_doctor')?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="testimonials">Testimonial</a>
+                        <a class="nav-link" href="testimonials"><?php echo lang('h_testimonial')?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacts">Contact</a>
+                        <a class="nav-link" href="contacts"><?php echo lang('h_contact')?></a>
                     </li>
                 </ul>
             </div>
@@ -43,7 +43,7 @@
     </div>
     <div class="col-sm-3">
         <form class="form-inline my-2 my-lg-0 search-input">
-            <input class="form-control mr-sm-2 search-box" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control mr-sm-2 search-box" type="search" placeholder="<?php echo lang('search')?>" aria-label="Search">
         </form>
     </div>
 </div>

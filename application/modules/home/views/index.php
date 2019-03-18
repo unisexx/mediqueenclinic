@@ -1,10 +1,10 @@
 <div class="row">
     <div class="col-lg-3 col-sm-4 col-xs-12">
         <div class="logo"><img src="themes/mediqueenclinic/images/logo.png" alt=""></div>
-        <img src="themes/mediqueenclinic/images/icon-mark.png" alt=""><?php echo $contact->address_th?>
-        <img src="themes/mediqueenclinic/images/icon-phone.png" alt=""><?php echo $contact->tel_th?>
+        <img src="themes/mediqueenclinic/images/icon-mark.png" alt=""><?php echo $contact->{'address_'.@$this->session->userdata('lang')}?>
+        <img src="themes/mediqueenclinic/images/icon-phone.png" alt=""><?php echo $contact->{'tel_'.@$this->session->userdata('lang')}?>
         <div class="clearfix tall"></div>
-        <img src="themes/mediqueenclinic/images/icon-time.png" alt=""><?php echo $contact->time_th?>
+        <img src="themes/mediqueenclinic/images/icon-time.png" alt=""><?php echo $contact->{'time_'.@$this->session->userdata('lang')}?>
     </div>
     <div class="col-lg-9 col-sm-8 col-xs-12">
         <div id="carouselExampleIndicators" class="carousel slide text-right" data-ride="carousel">
@@ -12,14 +12,11 @@
                 <?php foreach($hilight as $key=>$row):?>
                 <li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $key?>" class="<?php echo $key == 0 ? 'active' : '' ?>"></li>
                 <?php endforeach;?>
-                <!-- <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
             </ol>
             <div class="carousel-inner">
                 <?php foreach($hilight as $key=>$row):?>
                 <div class="carousel-item <?php echo $key == 0 ? 'active' : '' ?>">
-                    <img src="uploads/hilight/<?php echo $row->img_th?>" class="d-block w-100" alt="...">
+                    <img src="uploads/hilight/<?php echo $row->{'img_'.@$this->session->userdata('lang')}?>" class="d-block w-100" alt="...">
                 </div>
                 <?php endforeach;?>
             </div>
@@ -46,25 +43,25 @@
             <div class="collapse navbar-collapse topmenu" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="home"><?php echo lang('h_home')?> <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="abouts">ABOUT</a>
+                        <a class="nav-link" href="abouts"><?php echo lang('h_about')?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="promotions">Promotions</a>
+                        <a class="nav-link" href="promotions"><?php echo lang('h_promotion')?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services">Services</a>
+                        <a class="nav-link" href="services"><?php echo lang('h_service')?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="doctors">Doctors</a>
+                        <a class="nav-link" href="doctors"><?php echo lang('h_doctor')?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="testimonials">Testimonial</a>
+                        <a class="nav-link" href="testimonials"><?php echo lang('h_testimonial')?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacts">Contact</a>
+                        <a class="nav-link" href="contacts"><?php echo lang('h_contact')?></a>
                     </li>
                 </ul>
             </div>
@@ -78,16 +75,16 @@
     </div>
     <div class="col-sm-3">
         <form class="form-inline my-2 my-lg-0 search-input">
-            <input class="form-control mr-sm-2 search-box" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control mr-sm-2 search-box" type="search" placeholder="<?php echo lang('search')?>" aria-label="Search">
         </form>
     </div>
 </div>
 <!-- END row Topmenu and search -->
 <div class="row">
     <div class="col-sm-12 text-center">
-        <div class="title">SERVICES</div>
+        <div class="title"><?php echo lang('h_service');?></div>
         <div class="col-sm-3 line01"><img src="themes/mediqueenclinic/images/icon-line01.jpg" alt="" width="28" height="16"></div>
-        <button class="btn1" href="javascript:void(0);" onclick="window.location.href='services'">ALL SERVICE</button>
+        <button class="btn1" href="javascript:void(0);" onclick="window.location.href='services'"><?php echo lang('all_service');?></button>
     </div>
 </div>
 <div class="clearfix tall"></div>
@@ -109,8 +106,8 @@
                 <?php endif;?>
 
                     <div class="col">
-                        <a href="services/category/<?php echo $row->id?>"><img src="uploads/service_category/<?php echo $row->img_th?>" alt="AESTHETIC MEDICINE"></a>
-                        <span class="name-service"><?php echo $row->name_th?></span>
+                        <a href="services/category/<?php echo $row->id?>"><img src="uploads/service_category/<?php echo $row->{'img_'.@$this->session->userdata('lang')}?>" alt="AESTHETIC MEDICINE"></a>
+                        <span class="name-service"><?php echo $row->{'name_'.@$this->session->userdata('lang')}?></span>
                     </div>
 
                 <?php if ($count%3 == 0):?>
@@ -144,13 +141,13 @@
 <!-- START row Promotions -->
 <div class="row" id="paddingrow">
     <div class="col-sm-4 promotion">
-        <span class="title-pro"><?php echo $promotion_list->title_th?></span>
+        <span class="title-pro"><?php echo $promotion_list->{'title_'.@$this->session->userdata('lang')}?></span>
         <div class="scrollbar" id="style-1">
             <div class="force-overflow">
                 <ul>
                     <?php foreach($promotion_list->promotion_list_detail->get() as $key=>$row):?>
                     <li class="bg-pro<?php echo sprintf("%02d", ($key+1))?>">
-                        <span class="pro-text-left"><?php echo $row->title_th?></span><span class="pro-text-right"><?php echo $row->price?></span></li>
+                        <span class="pro-text-left"><?php echo $row->{'title_'.@$this->session->userdata('lang')}?></span><span class="pro-text-right"><?php echo $row->price?></span></li>
                     <?php endforeach;?>
                 </ul>
             </div>
@@ -163,7 +160,7 @@
             <div class="carousel-inner">
                 <?php foreach($promotion_hilight as $key => $row):?>
                 <div class="carousel-item <?php echo $key == 0 ? 'active' : ''; ?>">
-                    <img src="uploads/promotion_hilight/<?php echo $row->img_th?>" alt="โปรสุดคุ้ม" class="img-fluid">
+                    <img src="uploads/promotion_hilight/<?php echo $row->{'img_'.@$this->session->userdata('lang')}?>" alt="โปรสุดคุ้ม" class="img-fluid">
                 </div>
                 <?php endforeach;?>
             </div>
@@ -183,7 +180,7 @@
 <div class="clearfix tall2"></div>
 <div class="row" id="margin-doctor">
     <div class="col-sm-12 text-center">
-        <div class="title">DOCTORS</div>
+        <div class="title"><?php echo lang('h_doctor')?></div>
         <div class="col-sm-3 line01"><img src="themes/mediqueenclinic/images/icon-line01.jpg" alt="" width="28" height="16"></div>
     </div>
 </div>
@@ -202,9 +199,9 @@
             <?php endif;?>
 
                     <div class="col col-lg-4 doctor">
-                        <a href="doctors"><img src="uploads/doctor/<?php echo $row->image?>" alt="<?php echo $row->name_th?>"></a>
-                        <span class="name1-doctor"><?php echo $row->name_th?></span>
-                        <span class="name2-doctor"><?php echo $row->nickname_th?></span>
+                        <a href="doctors"><img src="uploads/doctor/<?php echo $row->image?>" alt="<?php echo $row->{'name_'.@$this->session->userdata('lang')}?>"></a>
+                        <span class="name1-doctor"><?php echo $row->{'name_'.@$this->session->userdata('lang')}?></span>
+                        <span class="name2-doctor"><?php echo $row->{'nickname_'.@$this->session->userdata('lang')}?></span>
                     </div>
 
             <?php if ($count%3 == 0):?>
@@ -230,7 +227,7 @@
 <div class="clearfix tall2"></div>
 <div class="row" id="margin-doctor">
     <div class="col-sm-12 text-center">
-        <div class="title">REVIEWS</div>
+        <div class="title"><?php echo lang('review');?></div>
         <div class="col-sm-3 line01"><img src="themes/mediqueenclinic/images/icon-line01.jpg" alt="" width="28" height="16"></div>
     </div>
 </div>
@@ -273,7 +270,7 @@
                 <?php endforeach;?>
             </ol>
         </div>
-        <a href="review_images" class="a-review">ดูรีวิวทั้งหมด</a>
+        <a href="review_images" class="a-review"><?php echo lang('review_all')?></a>
         <!-- END Review Picture Slide -->
 
 
@@ -286,7 +283,7 @@
                 <div class='carousel-inner inner-review'>
                     <?php foreach($review_video as $key => $row):?>
                     <div class='carousel-item <?php echo $key == 0 ? 'active' : ''; ?>'>
-                        <div class="title-vdo"><?php echo $row->title_th?></div>
+                        <div class="title-vdo"><?php echo $row->{'title_'.@$this->session->userdata('lang')}?></div>
                         <iframe width="85%" height="315" src="https://www.youtube.com/embed/<?php echo getYoutubeID($row->youtube)?>" frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -315,7 +312,7 @@
                 <?php endforeach;?>
             </ol>
         </div>
-        <a href="review_videos" class="a-review2">ดูวีดีโอทั้งหมด</a>
+        <a href="review_videos" class="a-review2"><?php echo lang('video_all')?></a>
         <!-- END Review VDO Slide -->
     </div>
 </div>
