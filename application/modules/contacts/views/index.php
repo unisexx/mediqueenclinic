@@ -36,16 +36,15 @@
     <form method="post" action="contacts/save">
         <div class="row">
             <div class="col-sm-6">
-                <div class="form-group"><input type="text" class="form-control contact-input" id="" placeholder="<?php echo lang('name')?> *"></div>
-                <div class="form-group"></div><input type="email" class="form-control contact-input" id="email"
-                    placeholder="<?php echo lang('email')?> *">
-                <div class="form-group"></div><input type="text" class="form-control contact-input" id="" placeholder="<?php echo lang('tel')?> *">
+                <div class="form-group"><input name="name" type="text" class="form-control contact-input" id="" placeholder="<?php echo lang('name')?> *" required></div>
+                <div class="form-group"></div><input name="email" type="email" class="form-control contact-input" id="email" placeholder="<?php echo lang('email')?> *" required>
+                <div class="form-group"></div><input name="tel" type="text" class="form-control contact-input" id="" placeholder="<?php echo lang('tel')?> *" required>
             </div>
             <div class="col-sm-6 contact-textarea">
-                <div class="form-group"><textarea class="form-control contact-input" rows="6" placeholder="<?php echo lang('message')?> *" id="" name="message"></textarea></div>
+                <div class="form-group"><textarea class="form-control contact-input" rows="6" placeholder="<?php echo lang('message')?> *" id="" name="message" required></textarea></div>
                 <div class="form-group">
                     <img src="users/captcha" /><br>
-                    <input type="text" name="captcha" class="captcha" style="width:104px;" placeholder="<?php echo lang('captcha')?> *">
+                    <input type="text" name="captcha" class="captcha" style="width:104px;" placeholder="<?php echo lang('captcha')?> *" required>
                 </div>
                 <button class="btn btn-send" type="submit"><?php echo lang('submit')?></button>
             </div>

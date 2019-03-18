@@ -24,7 +24,8 @@
 	<? include "_footer.php";?>
 
     <!--JavaScript -->
-    <? include "_js.php";?>
+	<? include "_js.php";?>
+	<?php echo $template['metadata']; ?>
 	
 </body>
 

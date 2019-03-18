@@ -14,14 +14,14 @@ class Contacts extends Public_Controller {
 	}
 
 	function save(){
-		if(!empty($_POST['captcha']) && $_POST['captcha']==$_SESSION['captcha'])
-		{
+		$captcha = $this->session->userdata('captcha');
+		if(($_POST['captcha'] == $captcha) && !empty($captcha)){
 			$rs = new message();
 			$rs->from_array($_POST);
 			$rs->save();
-			set_notify('success', 'บันทึกข้อมูลเรียบร้อย');
+			set_notify('success', 'ขอบคุณสำหรับข้อความ กรุณารอการตอบกลับจากเจ้าหน้าที่ค่ะ');
 		}else{
-			set_notify('error','กรุณากรอกตัวเลขให้ตรงกับภาพค่ะ');
+			set_notify('error','กรุณากรอกรหัสให้ตรงกับภาพค่ะ');
 		}
 		redirect('contacts');
 	}
