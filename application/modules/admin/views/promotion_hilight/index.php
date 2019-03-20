@@ -25,6 +25,7 @@
             <table class="table table-bordered">
                 <tr>
                     <th style="width: 10px">#</th>
+                    <th>สถานะ</th>
                     <th>รูป (ภาษาไทย)</th>
                     <th>รูป (ภาษาอังกฤษ)</th>
                     <th>ลิ้งค์รูป</th>
@@ -33,6 +34,9 @@
                 <?foreach($rs as $key=>$row):?>
                 <tr>
                     <td><?=($key+1)+$rs->paged->current_row?></td>
+                    <td>
+                        <input class="switch_status" type="checkbox" data-toggle="toggle" data-switch-id="<?php echo $row->id?>" <?php echo $row->status == 'public' ? 'checked' : '' ;?>>
+                    </td>
                     <td><?if($row->img_th):?><img src="uploads/promotion_hilight/<?=$row->img_th?>" width="350"><?endif;?></td>
                     <td><?if($row->img_en):?><img src="uploads/promotion_hilight/<?=$row->img_en?>" width="350"><?endif;?></td>
                     <td><?php echo $row->url?></td>
@@ -56,4 +60,16 @@
     <!-- /.card -->
 
 </section>
+
+<script>
+$(function() {
+    $(document).on('change', ".switch_status", function () {
+        $.ajax({
+            url: 'admin/ajax/changestatus',
+            data:{ table : 'promotion_hilights', status : $(this).prop('checked'), id : $(this).data('switch-id') },
+            dataType: "json",
+        });
+    });
+});
+</script>
 <!-- /.content -->

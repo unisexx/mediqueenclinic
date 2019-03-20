@@ -129,7 +129,7 @@
         </li>
 
         <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="admin/messages" class="nav-link">
                 <i class="nav-icon fa fa-th"></i>
                 <p>ส่งข้อความถึงเรา</p>
             </a>

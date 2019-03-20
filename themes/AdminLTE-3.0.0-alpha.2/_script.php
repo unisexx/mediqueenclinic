@@ -35,3 +35,7 @@
 <script src="themes/AdminLTE-3.0.0-alpha.2/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="themes/AdminLTE-3.0.0-alpha.2/dist/js/demo.js"></script>
+
+<!-- switch toggle -->
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>

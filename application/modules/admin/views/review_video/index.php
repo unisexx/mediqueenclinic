@@ -25,6 +25,7 @@
             <table class="table table-bordered">
                 <tr>
                     <th style="width: 10px">#</th>
+                    <th>สถานะ</th>
                     <th>หัวข้อ (ภาษาไทย)</th>
                     <th>หัวข้อ (ภาษาอังกฤษ)</th>
                     <th>youtube</th>
@@ -33,6 +34,9 @@
                 <?foreach($rs as $key=>$row):?>
                 <tr>
                     <td><?=($key+1)+$rs->paged->current_row?></td>
+                    <td>
+                        <input class="switch_status" type="checkbox" data-toggle="toggle" data-switch-id="<?php echo $row->id?>" <?php echo $row->status == 'public' ? 'checked' : '' ;?>>
+                    </td>
                     <td><?php echo $row->title_th?></td>
                     <td><?php echo $row->title_en?></td>
                     <td><?php echo $row->youtube?></td>
@@ -56,4 +60,16 @@
     <!-- /.card -->
 
 </section>
+
+<script>
+$(function() {
+    $(document).on('change', ".switch_status", function () {
+        $.ajax({
+            url: 'admin/ajax/changestatus',
+            data:{ table : 'review_videos', status : $(this).prop('checked'), id : $(this).data('switch-id') },
+            dataType: "json",
+        });
+    });
+});
+</script>
 <!-- /.content -->
