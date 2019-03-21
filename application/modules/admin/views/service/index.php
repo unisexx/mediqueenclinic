@@ -36,7 +36,10 @@
                     <td>
                         <input class="switch_status" type="checkbox" data-toggle="toggle" data-switch-id="<?php echo $row->id?>" <?php echo $row->status == 'public' ? 'checked' : '' ;?>>
                     </td>
-                    <td><?php echo $row->title_th?></td>
+                    <td>
+                        <div>ภาษาไทย :: <?php echo $row->title_th?></div>
+                        <div>ภาษาอังกฤษ :: <?php echo $row->title_en?></div>
+                    </td>
                     <td><?php echo $row->service_category->name_th?></td>
                     <td>
                         <a href="admin/services/form/<?=$row->id?>">

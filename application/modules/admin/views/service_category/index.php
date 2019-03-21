@@ -26,8 +26,7 @@
                 <tr>
                     <th style="width: 10px">#</th>
                     <th>สถานะ</th>
-                    <th>หัวข้อ (ภาษาไทย)</th>
-                    <th>หัวข้อ (ภาษาอังกฤษ)</th>
+                    <th>หัวข้อ</th>
                     <th>รูป (ภาษาไทย)</th>
                     <th>รูป (ภาษาอังกฤษ)</th>
                     <th width="150">จัดการ</th>
@@ -38,10 +37,12 @@
                     <td>
                         <input class="switch_status" type="checkbox" data-toggle="toggle" data-switch-id="<?php echo $row->id?>" <?php echo $row->status == 'public' ? 'checked' : '' ;?>>
                     </td>
-                    <td><?php echo $row->name_th?></td>
-                    <td><?php echo $row->name_en?></td>
-                    <td><?if($row->img_th):?><img src="uploads/service_category/<?=$row->img_th?>" width="350"><?endif;?></td>
-                    <td><?if($row->img_en):?><img src="uploads/service_category/<?=$row->img_en?>" width="350"><?endif;?></td>
+                    <td>
+                        <div>ภาษาไทย :: <?php echo $row->name_th?></div>
+                        <div>ภาษาอังกฤษ :: <?php echo $row->name_en?></div>
+                    </td>
+                    <td><?if($row->img_th):?><img src="uploads/service_category/<?=$row->img_th?>" width="200"><?endif;?></td>
+                    <td><?if($row->img_en):?><img src="uploads/service_category/<?=$row->img_en?>" width="200"><?endif;?></td>
                     <td>
                         <a href="admin/service_categories/form/<?=$row->id?>">
                             <button type="button" class="btn btn-secondary btn-sm">แก้ไข</button>

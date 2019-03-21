@@ -9,7 +9,7 @@ class Promotions extends Public_Controller {
 	function index()
 	{
 		$data['rs'] = new promotion();
-		$data['rs'] = $data['rs']->order_by('id','desc')->limit(1)->get();
+		$data['rs'] = $data['rs']->where('status','public')->order_by('id','desc')->limit(1)->get();
 		$this->template->build('index',$data);
 	}
 

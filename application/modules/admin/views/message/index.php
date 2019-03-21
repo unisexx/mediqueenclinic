@@ -12,9 +12,9 @@
 <!-- Main content -->
 <section class="content">
 
-    <div id="btnBox" align="right" style="margin-bottom:10px;">
+    <!-- <div id="btnBox" align="right" style="margin-bottom:10px;">
         <input type="button" title="เพิ่มรายการ" value="เพิ่มรายการ" onclick="document.location='admin/hilights/form'" class="btn btn-primary" />
-    </div>
+    </div> -->
 
     <div class="card card-info card-outline">
         <div class="card-header">

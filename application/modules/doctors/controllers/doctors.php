@@ -9,7 +9,7 @@ class Doctors extends Public_Controller {
 	function index()
 	{
 		$data['rs'] = new doctor();
-		$data['rs'] = $data['rs']->order_by('id','desc')->get_page(3);
+		$data['rs'] = $data['rs']->where('status','public')->order_by('id','desc')->get_page(3);
 		$this->template->build('index',$data);
 	}
 

@@ -37,8 +37,8 @@
                     <td>
                         <input class="switch_status" type="checkbox" data-toggle="toggle" data-switch-id="<?php echo $row->id?>" <?php echo $row->status == 'public' ? 'checked' : '' ;?>>
                     </td>
-                    <td><?if($row->img_th):?><img src="uploads/hilight/<?=$row->img_th?>" width="350"><?endif;?></td>
-                    <td><?if($row->img_en):?><img src="uploads/hilight/<?=$row->img_en?>" width="350"><?endif;?></td>
+                    <td><?if($row->img_th):?><img src="uploads/hilight/<?=$row->img_th?>" width="200"><?endif;?></td>
+                    <td><?if($row->img_en):?><img src="uploads/hilight/<?=$row->img_en?>" width="200"><?endif;?></td>
                     <td><?php echo $row->url?></td>
                     <td>
                         <a href="admin/hilights/form/<?=$row->id?>">

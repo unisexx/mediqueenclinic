@@ -14,25 +14,25 @@ class Home extends Public_Controller {
 		$data['contact'] = $data['contact']->order_by('id','desc')->limit(1)->get();
 
 		$data['hilight'] = new hilight();
-		$data['hilight'] = $data['hilight']->order_by('id','desc')->get();
+		$data['hilight'] = $data['hilight']->where('status','public')->order_by('id','desc')->get();
 
 		$data['service_category'] = new service_category();
-		$data['service_category'] = $data['service_category']->order_by('id','asc')->get();
+		$data['service_category'] = $data['service_category']->where('status','public')->order_by('id','asc')->get();
 
 		$data['promotion_list'] = new promotion_list();
-		$data['promotion_list'] = $data['promotion_list']->order_by('id','asc')->limit(1)->get();
+		$data['promotion_list'] = $data['promotion_list']->where('status','public')->order_by('id','asc')->limit(1)->get();
 
 		$data['promotion_hilight'] = new promotion_hilight();
-		$data['promotion_hilight'] = $data['promotion_hilight']->order_by('id','desc')->get();
+		$data['promotion_hilight'] = $data['promotion_hilight']->where('status','public')->order_by('id','desc')->get();
 
 		$data['doctor'] = new doctor();
-		$data['doctor'] = $data['doctor']->order_by('id','desc')->get();
+		$data['doctor'] = $data['doctor']->where('status','public')->order_by('id','desc')->get();
 
 		$data['review_image'] = new review_image();
-		$data['review_image'] = $data['review_image']->order_by('id','desc')->limit(1)->get();
+		$data['review_image'] = $data['review_image']->where('status','public')->order_by('id','desc')->limit(1)->get();
 
 		$data['review_video'] = new review_video();
-		$data['review_video'] = $data['review_video']->order_by('id','desc')->get();
+		$data['review_video'] = $data['review_video']->where('status','public')->order_by('id','desc')->get();
 
 		$this->template->build('index',$data);
 	}

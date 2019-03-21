@@ -26,8 +26,7 @@
                 <tr>
                     <th style="width: 10px">#</th>
                     <th>สถานะ</th>
-                    <th>หัวข้อ (ภาษาไทย)</th>
-                    <th>หัวข้อ (ภาษาอังกฤษ)</th>
+                    <th>หัวข้อ</th>
                     <th>youtube</th>
                     <th width="150">จัดการ</th>
                 </tr>
@@ -37,8 +36,10 @@
                     <td>
                         <input class="switch_status" type="checkbox" data-toggle="toggle" data-switch-id="<?php echo $row->id?>" <?php echo $row->status == 'public' ? 'checked' : '' ;?>>
                     </td>
-                    <td><?php echo $row->title_th?></td>
-                    <td><?php echo $row->title_en?></td>
+                    <td>
+                        <div>ภาษาไทย :: <?php echo $row->title_th?></div>
+                        <div>ภาษาอังกฤษ :: <?php echo $row->title_en?></div>
+                    </td>
                     <td><?php echo $row->youtube?></td>
                     <td>
                         <a href="admin/review_videos/form/<?=$row->id?>">
