@@ -32,7 +32,7 @@
             </div>
             
             <div class="form-group">
-                <label for="exampleInputFile">อัพโหลดรูป (ภาษาไทย)</label>
+                <label for="exampleInputFile">อัพโหลดรูป (ภาษาไทย) - ขนาด 343 x 227 px</label>
                 <?if($rs->img_th):?><div><img src="uploads/service_category/<?=$rs->img_th?>" width="300"></div><?endif;?>
                 <div class="input-group">
                     <input type="file" name="img_th" class="form-control" id="fileField" />
@@ -40,7 +40,7 @@
             </div>
 
             <div class="form-group">
-                <label for="exampleInputFile">อัพโหลดรูป (ภาษาอังกฤษ)</label>
+                <label for="exampleInputFile">อัพโหลดรูป (ภาษาอังกฤษ) - ขนาด 343 x 227 px</label>
                 <?if($rs->img_en):?><div><img src="uploads/service_category/<?=$rs->img_en?>" width="300"></div><?endif;?>
                 <div class="input-group">
                     <input type="file" name="img_en" class="form-control" id="fileField" />

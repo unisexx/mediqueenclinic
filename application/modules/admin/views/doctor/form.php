@@ -22,7 +22,7 @@
         <div class="card-body">
             
             <div class="form-group">
-                <label for="exampleInputFile">รูปภาพ</label>
+                <label for="exampleInputFile">รูปภาพ - ขนาด 184 x 210 px</label>
                 <?if($rs->image):?><div><img src="uploads/doctor/<?=$rs->image?>" width="90"></div><?endif;?>
                 <div class="input-group">
                     <input type="file" name="imgUpload" class="form-control" id="fileField" />
