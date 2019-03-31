@@ -32,14 +32,39 @@
             </div>
 
             <div class="form-group">
-                <label>รายลเอียด (ภาษาไทย)</label>
+                <label>รายละเอียด (ภาษาไทย)</label>
                 <textarea name="detail_th" class="form-control tinymce" rows="5"><?php echo @$rs->detail_th?></textarea>
             </div>
             
             <div class="form-group">
-                <label>รายลเอียด (ภาษาอังกฤษ)</label>
+                <label>รายละเอียด (ภาษาอังกฤษ)</label>
                 <textarea name="detail_en" class="form-control tinymce" rows="5"><?php echo @$rs->detail_en?></textarea>
             </div>
+
+            <div class="form-group">
+                <label>อัพโหลดรูป (เลือกได้พร้อมกันหลายรูป)</label>
+                <input name="filUpload[]" type="file" class="form-control" multiple>
+            </div>
+
+            <table id="tbList" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>รูป</th>
+                        <th width="150">จัดการ</th>
+                    </tr>
+                    <?php foreach($rs->promotion_image->get() as $item):?>
+                    <tr>
+                        <td><img src="uploads/promotion_image/<?php echo $rs->id?>/<?php echo $item->image?>" width="200"></td>
+                        <td>
+                            <input type="hidden" name="oldImage[]" value="<?php echo $item->image?>">
+                            <button type="button" class="btn btn-secondary btn-sm delList">ลบ</button>
+                        </td>
+                    </tr>
+                    <?php endforeach;?>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
             
         </div>
         <!-- /.card-body -->
@@ -73,4 +98,16 @@ tinymce.init({
    ,relative_urls:false,
    remove_script_host:false
  });
+</script>
+
+<script>
+$(document).ready(function(){
+    $('body').on( "click", ".delList", function(){
+        if(confirm('ยืนยันการลบข้อมูล')){
+            $(this).closest('tr').fadeOut(300, function(){ 
+                $(this).remove(); 
+            });
+        }
+    });
+});
 </script>

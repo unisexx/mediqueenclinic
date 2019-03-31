@@ -26,17 +26,34 @@ class Promotions extends Admin_Controller {
 		if($_POST){
 
 			$rs = new promotion($id);
-			
-			if($_FILES['imgUpload']['name'])
-			{
-				if($rs->id){
-					$rs->delete_file($rs->id,'uploads/promotion','imgUpload');
-				}
-				$_POST['image'] = $rs->upload($_FILES['imgUpload'],'uploads/promotion/');
-			}
-			
 			$rs->from_array($_POST);
 			$rs->save();
+			$last_id = $rs->id;
+
+			// ลบทั้งหมดแล้วบันทึกใหม่
+			$this->db->delete('promotion_images', array('promotion_id' => $last_id)); 
+
+			fix_file($_FILES['filUpload']);
+			foreach($_FILES['filUpload'] as $key => $image)
+			{
+				$picture = new promotion_image(@$_POST['picture_id'][$key]);
+				if($image['name'])
+				{
+					$picture->image = @$picture->upload($image,'uploads/promotion_image/'.$last_id);
+					$picture->promotion_id = $last_id;
+					$picture->save();
+				}
+			}
+
+			if(isset($_POST['oldImage'])){
+				foreach($_POST['oldImage'] as $key=>$item){
+					$p                    = new promotion_image();
+					$p->promotion_id = $last_id;
+					$p->image             = $item;
+					$p->save();
+				}
+			}
+
 			set_notify('success', 'บันทึกข้อมูลเรียบร้อย');
 		}
 		redirect('admin/promotions');

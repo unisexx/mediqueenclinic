@@ -29,3 +29,6 @@
         $('.kc_fab_wrapper').kc_fab(links);
     })
 </script>
+
+<link href="media/js/lightbox2/src/css/lightbox.css" rel="stylesheet">
+<script src="media/js/lightbox2/src/js/lightbox.js"></script>
