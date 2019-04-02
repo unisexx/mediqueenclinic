@@ -7,6 +7,7 @@ $lang['h_service'] = "SERVICES";
 $lang['h_doctor'] = "DOCTORS";
 $lang['h_testimonial'] = "TESTIMONIAL";
 $lang['h_contact'] = "CONTACT";
+$lang['h_article'] = "ARTICLES";
 $lang['search'] = "SEARCH";
 $lang['all_service'] = "ALL SERVICE";
 $lang['review'] = "REVIEWS";

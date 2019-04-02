@@ -101,6 +101,13 @@
         </li>
 
         <li class="nav-item">
+            <a href="admin/articles" class="nav-link">
+                <i class="nav-icon fa fa-th"></i>
+                <p>ARTICLES</p>
+            </a>
+        </li>
+
+        <li class="nav-item">
             <a href="admin/products" class="nav-link">
                 <i class="nav-icon fa fa-th"></i>
                 <p>SKIN CARE PRODUCTS</p>

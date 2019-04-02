@@ -29,6 +29,9 @@
                         <a class="nav-link" href="services"><?php echo lang('h_service')?></a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="articles"><?php echo lang('h_article')?></a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="doctors"><?php echo lang('h_doctor')?></a>
                     </li>
                     <li class="nav-item">

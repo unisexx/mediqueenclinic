@@ -7,6 +7,7 @@ $lang['h_service'] = "บริการความสวย";
 $lang['h_doctor'] = "แพทย์ผู้เชี่ยวชาญ";
 $lang['h_testimonial'] = "เสียงจากลูกค้า";
 $lang['h_contact'] = "ติดต่อเรา";
+$lang['h_article'] = "บทความ";
 $lang['search'] = "ค้นหา";
 $lang['all_service'] = "บริการทั้งหมด";
 $lang['review'] = "รีวิว";

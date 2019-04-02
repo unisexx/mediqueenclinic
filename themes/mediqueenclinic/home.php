@@ -13,18 +13,7 @@
 
 <body>
 	<div class="container con-width">
-
-
-
-
-
 		<?php echo $template['body']; ?>
-
-
-
-
-
-
 	</div>
 	<!-- END CENTENT .container .con-width -->
 

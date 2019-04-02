@@ -1,12 +1,16 @@
 <div class="row">
-    <div class="col-lg-3 col-sm-4 col-xs-12">
+
+    <div class="col-lg-3 col-sm-4 col-xs-12 branch-mobile-width">
         <div class="logo"><img src="themes/mediqueenclinic/images/logo.png" alt=""></div>
-        <img src="themes/mediqueenclinic/images/icon-mark.png" alt=""><?php echo $contact->{'address_'.@$this->session->userdata('lang')}?>
-        <img src="themes/mediqueenclinic/images/icon-phone.png" alt=""><?php echo $contact->{'tel_'.@$this->session->userdata('lang')}?>
-        <div class="clearfix tall"></div>
-        <img src="themes/mediqueenclinic/images/icon-time.png" alt=""><?php echo $contact->{'time_'.@$this->session->userdata('lang')}?>
+        <div class="branch-mobile">
+            <img src="themes/mediqueenclinic/images/icon-mark.png" alt=""><?php echo $contact->{'address_'.@$this->session->userdata('lang')}?>
+            <img src="themes/mediqueenclinic/images/icon-phone.png" alt=""><?php echo $contact->{'tel_'.@$this->session->userdata('lang')}?>
+            <div class="clearfix tall"></div>
+            <img src="themes/mediqueenclinic/images/icon-time.png" alt=""><?php echo $contact->{'time_'.@$this->session->userdata('lang')}?>
+        </div>
     </div>
-    <div class="col-lg-9 col-sm-8 col-xs-12">
+
+    <div class="col-lg-9 col-sm-8 col-xs-12 slide-mobile">
         <div id="carouselExampleIndicators" class="carousel slide text-right" data-ride="carousel">
             <ol class="carousel-indicators carous">
                 <?php foreach($hilight as $key=>$row):?>
@@ -34,7 +38,7 @@
 </div>
 <div class="row">
     <div class="col-sm-9">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light bgtopmenu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light bgtopmenu menumobile">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -53,6 +57,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="services"><?php echo lang('h_service')?></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="articles"><?php echo lang('h_article')?></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="doctors"><?php echo lang('h_doctor')?></a>

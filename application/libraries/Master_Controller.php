@@ -4,6 +4,7 @@ class Master_Controller extends MX_Controller
 	
 	function __construct()
 	{
+		ob_start();
 		parent::__construct();
 	}
 	
