@@ -29,7 +29,7 @@ p{line-height: 25px;}
 .bgtopmenu {background-color: #fff !important; margin-left: -12px; position: relative; }
 .menuone{padding-left: 0px;}
 .topmenu ul li a.nav-link{color: #8e4198 !important; font-family: 'SukhumvitSet-Light'; text-transform: uppercase; font-size: 16px;}
-.nav-link{padding-right: 2rem !important;    /*padding-left: 2rem !important;*/ margin-top: 15px;}
+.nav-link{/*padding-right: 1rem !important;*/    padding-left: 2rem !important; margin-top: 15px;}
 .search-box{border: 1px solid #cda8d2; border-radius:0px;  }
 .search-input {float: right;}
 .search-input input{ background-image: url("../images/icon-search.png"); background-repeat: no-repeat; background-position: 2px 10px;margin-top: 15px;}
@@ -293,7 +293,7 @@ img.img-fluid.mr {    margin-bottom: 20px;}
 #bg-review-pic,#bg-review2-pic{ max-height: 720px;}
 .a-review{margin-bottom: 20px; margin-top: -25px;}
 .a-review2{margin-top: -15px;}
-.follow{margin-top: 70px;}
+.follow{margin-top: 0px;}
 .pic-promotion{margin-top: 40px;}
 .search-input {margin-left: -512px; }
 .title{margin-bottom: 30px;}
@@ -312,7 +312,7 @@ img.img-fluid.mr {    margin-bottom: 20px;}
 .line-comment {margin-left: 0; margin-right: 0;}
 .time-comment2 {margin-left: 0;}
 .menumobile{opacity: .9;}
-
+.tall2 {height: 120px;}
 }
 @media screen and (max-width: 740px) and (min-width: 740px)  {
 	.logo{position: absolute; z-index:1; left: 60px;}
@@ -466,8 +466,6 @@ img.img-fluid.mr {    margin-bottom: 20px;}
 #bg-review2-pic{margin-top: 50px;}
 .language{ left:70px; max-width:20%;}
 }
-
-
 
 /* unisexx@gmail.com :: Pagination */
 .page-item.active .page-link {

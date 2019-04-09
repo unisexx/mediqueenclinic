@@ -1,41 +1,34 @@
-<div class="row">
-
-    <div class="col-lg-3 col-sm-4 col-xs-12 branch-mobile-width">
-        <div class="logo"><img src="themes/mediqueenclinic/images/logo.png" alt=""></div>
-        <div class="branch-mobile">
-            <img src="themes/mediqueenclinic/images/icon-mark.png" alt=""><?php echo $contact->{'address_'.@$this->session->userdata('lang')}?>
-            <img src="themes/mediqueenclinic/images/icon-phone.png" alt=""><?php echo $contact->{'tel_'.@$this->session->userdata('lang')}?>
-            <div class="clearfix tall"></div>
-            <img src="themes/mediqueenclinic/images/icon-time.png" alt=""><?php echo $contact->{'time_'.@$this->session->userdata('lang')}?>
-        </div>
-    </div>
-
-    <div class="col-lg-9 col-sm-8 col-xs-12 slide-mobile">
-        <div id="carouselExampleIndicators" class="carousel slide text-right" data-ride="carousel">
-            <ol class="carousel-indicators carous">
-                <?php foreach($hilight as $key=>$row):?>
-                <li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $key?>" class="<?php echo $key == 0 ? 'active' : '' ?>"></li>
-                <?php endforeach;?>
-            </ol>
-            <div class="carousel-inner">
-                <?php foreach($hilight as $key=>$row):?>
-                <div class="carousel-item <?php echo $key == 0 ? 'active' : '' ?>">
-                    <img src="uploads/hilight/<?php echo $row->{'img_'.@$this->session->userdata('lang')}?>" class="d-block w-100" alt="...">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-sm-12 col-xs-12" style="padding:0; ">
+            <div id="carouselExampleIndicators" class="carousel slide text-right" data-ride="carousel">
+                <ol class="carousel-indicators carous">
+                    <?php foreach($hilight as $key=>$row):?>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $key?>" class="<?php echo $key == 0 ? 'active' : '' ?>"></li>
+                    <?php endforeach;?>
+                </ol>
+                <div class="carousel-inner">
+                    <?php foreach($hilight as $key=>$row):?>
+                    <div class="carousel-item <?php echo $key == 0 ? 'active' : '' ?>">
+                        <img src="uploads/hilight/<?php echo $row->{'img_'.@$this->session->userdata('lang')}?>" class="d-block w-100" alt="...">
+                    </div>
+                    <?php endforeach;?>
                 </div>
-                <?php endforeach;?>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <!-- END Slide -->
         </div>
-        <!-- END Slide -->
     </div>
 </div>
+
+<div class="container con-width">
 <div class="row">
     <div class="col-sm-9">
         <nav class="navbar navbar-expand-lg navbar-light bg-light bgtopmenu menumobile">
@@ -324,3 +317,38 @@
     </div>
 </div>
 <!-- END Review Picture and vdo -->
+
+</div>
+<!-- END CENTENT .container .con-width -->
+<div class="clearfix tall2"></div>
+<hr class="line-clear">
+<br clear="all">
+<div class="row" style="margin:0;">
+    <div class="col-md-5">
+        <img src="themes/mediqueenclinic/images/icon-mark.png" alt="" style="float: left;">
+        <div style="padding-left:20px;">
+            <?php echo $contact->{'address_'.@$this->session->userdata('lang')}?>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <img src="themes/mediqueenclinic/images/icon-phone.png" alt="" style="float: left;">
+        <div style="padding-left:25px;">
+            <?php echo $contact->{'tel_'.@$this->session->userdata('lang')}?>
+            <div class="follow">
+                <ul style="padding:0;margin-top: 10px;">
+                    <li>Follow us on:</li>
+                    <li><a href="#"><img src='themes/mediqueenclinic/images/social-icon-facebook.jpg' alt=''></a></li>
+                    <li><a href="#"><img src='themes/mediqueenclinic/images/social-icon-twitter.jpg' alt=''></a></li>
+                    <li><a href="#"><img src='themes/mediqueenclinic/images/social-icon-insta.jpg' alt=''></a></li>
+                    <li><a href="#"><img src='themes/mediqueenclinic/images/social-icon-youtube.jpg' alt=''></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <img src="themes/mediqueenclinic/images/icon-time.png" alt="" style="float: left;">
+        <div style="padding-left:25px;">
+            <?php echo $contact->{'time_'.@$this->session->userdata('lang')}?>
+        </div>
+    </div>
+</div>

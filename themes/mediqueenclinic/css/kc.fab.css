@@ -30,6 +30,7 @@
             transition: opacity 0.3s ease-in;
   pointer-events:all;
 }
+
 .sub_fab_btns_wrapper button[data-link-title]:hover:after{
   content: attr(data-link-title);
   opacity: 1;
@@ -65,6 +66,18 @@
   transition:.3s;  
   pointer-events:all;
 }
+ .icon_kcfab{
+ display: inline;
+  font-size: 20px;
+  position: absolute;
+  right: 0px;
+  top:10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  padding:5px;
+}
+
 button.kc_fab_main_btn{
   background-color:#F44336;
   width:60px;

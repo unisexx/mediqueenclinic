@@ -10,25 +10,33 @@
 </script>
 <!--JavaScript Floating Action Button Contact -->
 <script src="themes/mediqueenclinic/js/kc.fab.min.js"></script>
-<script>
-    $(document).ready(function () {
-        var links = [
-            {
-                "bgcolor": "#85cf2f",
-                "icon": "+"
-            },
-            {
-                "url": "#",
-                "bgcolor": "#00c300",
-                "color": "#fffff",
-                "icon": "<img src='themes/mediqueenclinic/images/widget_icon_line.png' alt=''>",
-                "target": "_blank",
-                "title": "Add Line"
-            },
-        ]
-        $('.kc_fab_wrapper').kc_fab(links);
-    })
-</script>
+	<script>
+		$(document).ready(function () {
+			var links = [
+				{
+					"bgcolor": "#85cf2f",
+					"icon": " <img src='themes/mediqueenclinic/images/icon_word-balloon-speak2.png' alt=''>",
+				},
+				{
+					"url": "#",
+					"bgcolor": "#00c300",
+					"color": "#ffffff",
+					"icon": "<img src='themes/mediqueenclinic/images/widget_icon_line.png' alt=''>",
+					"target": "_blank",
+					"title": "Add Line"
+				},
+				{
+					"url": "#",
+					"bgcolor": "#2173f3",
+					"color": "#ffffff",
+					"icon": "<img src='themes/mediqueenclinic/images/icon_messenger.png' alt=''>",
+					"target": "_blank",
+					"title": "แชทผ่าน Facebook"
+				},
+			]
+			$('.kc_fab_wrapper').kc_fab(links);
+		})
+    </script>
 
 <link href="media/js/lightbox2/src/css/lightbox.css" rel="stylesheet">
 <script src="media/js/lightbox2/src/js/lightbox.js"></script>

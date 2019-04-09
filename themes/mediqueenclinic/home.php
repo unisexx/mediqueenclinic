@@ -12,12 +12,12 @@
 </head>
 
 <body>
-	<div class="container con-width">
+	<!-- <div class="container con-width"> -->
 		<?php echo $template['body']; ?>
-	</div>
+	<!-- </div> -->
 	<!-- END CENTENT .container .con-width -->
 
-	<? include "_footer.php";?>
+	<? include "_home_footer.php";?>
 
     <!--JavaScript -->
     <? include "_js.php";?>
