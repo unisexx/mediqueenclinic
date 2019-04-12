@@ -14,7 +14,7 @@
     <div class="col-lg-12">
     <!-- START COL Leftmenu -->
         <div class="col-lg-2 col-sm-3 col-xs-12 box-leftmenu">
-            <div class="title_page2" style="margin-left:0px;">หมวดหมู่</div>
+            <div class="title_page2" style="margin-left:0px;"><?php echo lang('category')?></div>
             <div class="leftmenu-article">
                 <ul>
                     <?php foreach($article_category as $key=>$item):?>
@@ -23,7 +23,7 @@
                 </ul>
             </div>
 
-            <div class="title_page2" style="margin-left:0px;">บทความ</div>
+            <div class="title_page2" style="margin-left:0px;"><?php echo lang('h_article')?></div>
             <div class="leftmenu-article">
                 <ul>
                     <?php foreach($articles as $key=>$row):?>
