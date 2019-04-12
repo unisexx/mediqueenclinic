@@ -14,6 +14,7 @@ body{background-color:white; font-size:15px; color:#555555; font-family: 'Sukhum
 	font-weight: normal;
 	font-style: normal;
 }
+
 p{line-height: 25px;}
 .con-width{max-width: 1300px;}
 .logo{margin-top: 20px; margin-bottom: 20px; text-align: center;}
@@ -28,7 +29,7 @@ p{line-height: 25px;}
 .bgtopmenu {background-color: #fff !important; margin-left: -12px; position: relative; }
 .menuone{padding-left: 0px;}
 .topmenu ul li a.nav-link{color: #8e4198 !important; font-family: 'SukhumvitSet-Light'; text-transform: uppercase; font-size: 16px;}
-.nav-link{padding-right: 2rem !important;    padding-left: 2rem !important; margin-top: 15px;}
+.nav-link{padding-right: 1rem !important;    padding-left: 2rem !important; margin-top: 15px;}
 .search-box{border: 1px solid #cda8d2; border-radius:0px;  }
 .search-input {float: right;}
 .search-input input{ background-image: url("../images/icon-search.png"); background-repeat: no-repeat; background-position: 2px 10px;margin-top: 15px;}
@@ -178,10 +179,19 @@ p{line-height: 25px;}
 	.leftmenu ul{padding: 0; margin: 0;}
 	.leftmenu ul li{ padding-left: 10px;  padding-top: 4px; padding-bottom: 4px; padding-right: 4px;  margin: 0; list-style: none; background-color: #ead9ed;  margin-top: 15px; margin-bottom: 15px; color: #555; display: block;}
 	.leftmenu ul li:hover,.leftmenu ul li.active{ color: #fff ; background-color: #b879bf;}
-	.leftmenu ul li a.active{ display:block; color: #fff ; background-color: #b879bf;  margin:0;}
+	.leftmenu ul li a.active{  display: block; color: #fff ; background-color: #b879bf;  margin:0;}
 	.leftmenu ul li a{color: #555; text-decoration: none; display: block;}
 	.leftmenu ul li a:hover{color: #fff; text-decoration: none; display: block;}
 	.leftmenu ul li.active a{ color: #fff !important ;}
+
+	/* leftmenu-article */
+	.leftmenu-article ul{padding: 0; margin: 0;}
+	.leftmenu-article ul li{  margin: 0; list-style: none; background-color: #ead9ed;  margin-top: 15px; margin-bottom: 15px; color: #555; display: block;}
+	.leftmenu-article ul li:hover,.leftmenu ul li.active{ color: #fff ; background-color: #b879bf;}
+	.leftmenu-article ul li a.active{  display: block; color: #fff ; background-color: #b879bf;  margin:0;}
+	.leftmenu-article ul li a{padding-left: 10px;  padding-top: 4px; padding-bottom: 4px; padding-right: 4px;  color: #555; text-decoration: none; display: block;}
+	.leftmenu-article ul li a:hover{color: #fff; text-decoration: none; display: block;}
+	.leftmenu-article ul li.active a{ color: #fff !important ;}
 	
 /* TAB */
 .box-tab{float:right;}
@@ -257,6 +267,9 @@ img.img-fluid.mr {    margin-bottom: 20px;}
 .language ul {margin:0; padding: 0;    margin-top: -40px;}
 .language ul li{display: inline-block;   list-style: none; z-index:1; margin-left: 5px; margin-right: 5px;   text-align: right;}
 .language ul li:hover{opacity: 0.8;}
+.title-article{background-color: #efe6f4; padding: 5px;	font-family:'SukhumvitSet-Light'; color: #9001a3; font-size: 22px; margin-top: 30px;margin-bottom: 0px;}
+
+
 
 @media (min-width: 576px) and (max-width: 767.98px) {
 	.slide-box img {-ms-flex: 0 0 50%; flex: 0 0 50%; max-width: 50%;}
@@ -280,7 +293,7 @@ img.img-fluid.mr {    margin-bottom: 20px;}
 .progood a{margin-right: 0px;}
 .icon-share{margin-right: 0px;}
 .hr-comment {  margin-top: 45px;}
-.nav-link {    padding-right: 1rem !important;    padding-left: 1rem !important;}
+.nav-link {    padding-right: 0.5rem !important;    padding-left: 0.5rem !important;}
 .language{ position:absolute; right:-61px; top:68px;}
 .language ul li{margin-left: 2px; margin-right: 2px;}
 }
@@ -289,9 +302,9 @@ img.img-fluid.mr {    margin-bottom: 20px;}
 #bg-review-pic,#bg-review2-pic{ max-height: 720px;}
 .a-review{margin-bottom: 20px; margin-top: -25px;}
 .a-review2{margin-top: -15px;}
-.follow{margin-top: 70px;}
+.follow{margin-top: 0px;}
 .pic-promotion{margin-top: 40px;}
-.search-input {float: none; }
+.search-input {margin-left: -512px; }
 .title{margin-bottom: 30px;}
 #mobile-dial{visibility: visible;}
 .name_tester{font-size: 16px;  line-height: 20px;}
@@ -307,19 +320,122 @@ img.img-fluid.mr {    margin-bottom: 20px;}
 .title-answer { margin-top: 0px; margin-left: 0;}
 .line-comment {margin-left: 0; margin-right: 0;}
 .time-comment2 {margin-left: 0;}
-
+.menumobile{opacity: .9;}
+.tall2 {height: 120px;}
 }
-@media screen and (min-width: 375px) and (max-width: 812px) {
-	.box-doctor{padding: 20px; top: 66px;left: 40px;margin-right: 15px; height: 335px;}
-	.name_doctor{ left: 132px;}
-	.nickname {	margin-top: 30px;	margin-left: -11px;	}
-	.pic-doctor { width:32%;}
-	.paragraph1 {padding-top: 0;padding-left: 85px;}
-	.paragraph3{padding-left: 0px;}
-	.paragraph2{padding-top: 0px;}
-	.media2 {   margin-bottom: 330px;}
-	.media3{margin-bottom:40px;}
+@media screen and (max-width: 740px) and (min-width: 740px)  {
+	.logo{position: absolute; z-index:1; left: 60px;}
+	.branch-mobile {margin-top: 280px;}
+	.bgtopmenu{margin-top: -600px;width: 45%;}
+	.language {left:90px; top:-540px;  flex: 0 0 50%%;	max-width: 50%;}
+}
+
+@media screen and (max-width: 739px) and (min-width: 360px)  {
+		/****Mobile Slide ขึ้นก่อน สาขา***/
+.slide-mobile {	margin-top: -700px; margin-left: 0px; flex: 0 0 100%;	max-width: 100%;}
+.branch-mobile {margin-top: 470px;}
+.branch-mobile-width{ flex: 0 0 100%;	max-width: 100%;}
+.language { position: absolute; left: 80px; top: -700px; flex: 0 0 50%%;	max-width: 50%;}
+.bgtopmenu {   margin-top: -760px; width: 10%;}
+.logo{position: relative; z-index:1; left: 2%;}
+.menumobile{width:100%;background: none !important; }
+.collapse{display: inline-block; background-color: #fff;}
+.promotion,.pic-promotion{flex: 0 0 100%; max-width: 100%;}
+}
+@media screen and (max-width: 414px) and (min-width: 414px)  {
+	.slide-mobile {margin-top: -570px;}
+	.branch-mobile { margin-top: 290px;}
+	.language { top: -570px;}
+	.bgtopmenu { margin-top: -630px;}
+}
+
+@media screen and (max-width: 375px) and (min-width: 375px)  {
+	.slide-mobile {margin-top: -550px;}
+	.branch-mobile { margin-top: 280px;}
+	.language { top: -550px;}
+	.bgtopmenu { margin-top: -612px;}
+}
+	@media screen and (min-width: 411px) and (max-width: 411px) {
+		/****Mobile Slide ขึ้นก่อน สาขา***/
+		.branch-mobile{ margin-top: 290px; position: relative;}
+		.slide-mobile{margin-top: -540px; position: relative;  margin-left: 2px; }
+		.slide-mobile img{width:100%;}
+		.language { position: absolute; left: 83px; top:-568px;}
+		.language ul{width: 100px;}
+		.bgtopmenu { position: relative;  margin-top: -630px; }
+		.branch-mobile-width{flex: 0 0 100%; max-width: 100%;}
+		.search-input{margin-left: 0px;}
+		.slide-mobile{flex: 0 0 100%;	max-width: 100%;margin-top: -570px;}
+		.promotion,.pic-promotion{flex: 0 0 100%; max-width: 100%;}
+}
+
+	@media screen and (min-width: 360px) and (max-width: 360px) {
+		/****Mobile Slide ขึ้นก่อน สาขา***/
+		.branch-mobile{ margin-top: 420px; position: relative;}
+		.slide-mobile{margin-top: -540px; position: relative;  margin-left: 2px; }
+		.slide-mobile img{width:100%;}
+		.language { position: absolute; left: 83px; top:-650px;}
+		.language ul{width: 100px;}
+		.bgtopmenu { position: relative;  margin-top: -710px; }
+		.branch-mobile-width{flex: 0 0 100%; max-width: 100%;}
+		.search-input{margin-left: 0px;}
+		.slide-mobile{flex: 0 0 100%;	max-width: 100%;margin-top: -650px;}
+		.promotion,.pic-promotion{flex: 0 0 100%; max-width: 100%;}
+}
+
+	@media screen and (min-width: 640px) and (max-width: 640px) {
+		/****Mobile Slide ขึ้นก่อน สาขา***/
+		.branch-mobile{ margin-top: 420px; position: relative;}
+		.slide-mobile{margin-top: -540px; position: relative;  margin-left: 2px; }
+		.slide-mobile img{width:100%;}
+		.language { position: absolute; left: 83px; top:-650px;}
+		.language ul{width: 100px;}
+		.bgtopmenu { position: relative;  margin-top: -710px; }
+		.branch-mobile-width{flex: 0 0 100%; max-width: 100%;}
+		.search-input{margin-left: -445px;}
+		.slide-mobile{flex: 0 0 100%;	max-width: 100%;margin-top: -650px;}
+		.promotion,.pic-promotion{flex: 0 0 100%; max-width: 100%;}
 	}
+	@media screen and (min-width: 568px) and (max-width: 568px) {
+		.slide-mobile{margin-top: -600px;}
+		.branch-mobile {margin-top: 328px;}
+		.language {  top:-600px;}
+		.bgtopmenu {margin-top: -657px; }
+		.logo{left: 6%;}
+		.search-input{margin-left: 20px;  }
+		.promotion,.pic-promotion{flex: 0 0 85%; }
+		#row-review,#doctor,.follow,.copyright  {width: 85%; margin: 0 auto;}
+		.container {width: 80%; }
+
+
+	}
+	@media screen and (min-width: 768px) and (max-width: 812px) {
+		/****Mobile Slide ขึ้นก่อน สาขา***/
+		.branch-mobile{ margin-top: 523px; position: relative;}
+		.slide-mobile{margin-top: -750px; position: relative;  margin-left: 2px; }
+		.slide-mobile img{width:100%;}
+		.language { position: absolute; left: 83px; top:-750px;}
+		.language ul{width: 100px;}
+		.bgtopmenu { position: relative;  margin-top: -807px; }
+		.branch-mobile-width{flex: 0 0 100%; max-width: 100%;}
+		.search-input{margin-left: 0px;}
+		.slide-mobile{flex: 0 0 100%;	max-width: 100%;margin-top: -750px;}
+		.promotion,.pic-promotion{flex: 0 0 100%; max-width: 100%;}
+	}
+	@media screen and (min-width: 823px) and (max-width: 823px) {
+		/****Mobile Slide ขึ้นก่อน สาขา***/
+		.branch-mobile{ margin-top: 523px; position: relative;}
+		.slide-mobile{margin-top: -750px; position: relative;  margin-left: 2px; }
+		.slide-mobile img{width:100%;}
+		.language { position: absolute; left: 83px; top:-750px;}
+		.language ul{width: 100px;}
+		.bgtopmenu { position: relative;  margin-top: -807px; }
+		.branch-mobile-width{flex: 0 0 100%; max-width: 100%;}
+		.search-input{margin-left: 0px;}
+		.slide-mobile{flex: 0 0 100%;	max-width: 100%;margin-top: -750px;}
+		.promotion,.pic-promotion{flex: 0 0 100%; max-width: 100%;}
+	}
+
 @media screen and (min-width: 321px) and (max-width: 374px) {
 	.box-doctor{padding: 20px; top: 90px;left: 40px;margin-right: 15px; height: 355px;}
 	.name_doctor{ left: 145px;}
@@ -330,6 +446,12 @@ img.img-fluid.mr {    margin-bottom: 20px;}
 	.paragraph2{padding-top: 0px;}
 	.media2 {   margin-bottom: 350px;}
 	.media3{margin-bottom:40px;}
+
+	/****Mobile Slide ขึ้นก่อน สาขา***/
+	.branch-mobile{ margin-top: 260px; position: relative;}
+	.slide-mobile{margin-top: -550px; position: relative; margin-left: 0px;}
+	.language { position: absolute; right: -80px; top: -560px;}
+	.bgtopmenu { position: relative;  margin-top: -620px;}
 	}
 @media screen and (min-width: 0px) and (max-width: 320px) {
 .box-doctor{padding: 20px; top: 90px;left: 40px;margin-right: 15px; height: 400px;}
@@ -341,6 +463,12 @@ img.img-fluid.mr {    margin-bottom: 20px;}
 .paragraph2{padding-top: 0px;}
 .media2 {   margin-bottom: 430px;}
 .media3{margin-bottom:40px;}
+
+	/****Mobile Slide ขึ้นก่อน สาขา***/
+	.branch-mobile{ margin-top: 240px; position: relative;}
+	.slide-mobile{margin-top: -550px; position: relative; }
+	.language { position: absolute; right: -80px; top: -552px;}
+	.bgtopmenu { position: relative;  margin-top: -609px;}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {

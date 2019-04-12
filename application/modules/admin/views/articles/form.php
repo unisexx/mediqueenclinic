@@ -22,6 +22,11 @@
         <div class="card-body">
 
             <div class="form-group">
+                <label>หมวดหมู่</label>
+                <?php echo form_dropdown('article_category_id',get_option('id','name_th','article_categories order by name_th asc'),@$rs->article_category_id,'class="form-control" style="width:auto;"','-- เลือกหมวดหมู่ --');?>
+            </div>
+
+            <div class="form-group">
                 <label>หัวข้อ (ภาษาไทย)</label>
                 <input name="title_th" value="<?php echo @$rs->title_th?>" type="text" class="form-control">
             </div>

@@ -101,6 +101,13 @@
         </li>
 
         <li class="nav-item">
+            <a href="admin/article_categories" class="nav-link">
+                <i class="nav-icon fa fa-th"></i>
+                <p>ARTICLE CATEGORIES</p>
+            </a>
+        </li>
+
+        <li class="nav-item">
             <a href="admin/articles" class="nav-link">
                 <i class="nav-icon fa fa-th"></i>
                 <p>ARTICLES</p>

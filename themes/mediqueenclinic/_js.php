@@ -40,3 +40,13 @@
 
 <link href="media/js/lightbox2/src/css/lightbox.css" rel="stylesheet">
 <script src="media/js/lightbox2/src/js/lightbox.js"></script>
+
+<!-- article -->
+<script>
+$(document).ready(function(){
+	$('.leftmenu-article li').click(function(){
+		// alert('click');
+		$(this).siblings().find('a').removeClass('active');
+	});
+});
+</script>
