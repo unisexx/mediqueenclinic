@@ -15,7 +15,7 @@
             <div class="leftmenu">
                 <ul>
                     <?php foreach($rs as $key=>$row):?>
-                    <li class="<?php echo $category_id == $row->id ? 'active' : '' ?>"><a href="services/category/<?php echo $row->id?>"><?php echo $row->{'name_'.@$this->session->userdata('lang')}?></a></li>
+                    <li class="<?php echo $slug == $row->slug ? 'active' : '' ?>"><a href="services/category/<?php echo $row->slug?>"><?php echo $row->{'name_'.@$this->session->userdata('lang')}?></a></li>
                     <?php endforeach;?>
                     <li><a href="products"><?php echo lang('product')?></a></li>
                 </ul>

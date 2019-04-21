@@ -42,6 +42,7 @@ class Service_categories extends Admin_Controller {
 				$_POST['img_en'] = $rs->upload($_FILES['img_en'],'uploads/service_category/');
 			}
 			
+			$_POST['slug'] = clean_url($_POST['name_en']);
 			$rs->from_array($_POST);
 			$rs->save();
 			set_notify('success', 'บันทึกข้อมูลเรียบร้อย');

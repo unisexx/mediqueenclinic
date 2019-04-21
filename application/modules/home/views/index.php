@@ -106,7 +106,7 @@
                 <?php endif;?>
 
                     <div class="col">
-                        <a href="services/category/<?php echo $row->id?>"><img src="uploads/service_category/<?php echo $row->{'img_'.@$this->session->userdata('lang')}?>" alt="AESTHETIC MEDICINE"></a>
+                        <a href="services/category/<?php echo $row->slug?>"><img src="uploads/service_category/<?php echo $row->{'img_'.@$this->session->userdata('lang')}?>" alt="AESTHETIC MEDICINE"></a>
                         <span class="name-service"><?php echo $row->{'name_'.@$this->session->userdata('lang')}?></span>
                     </div>
 

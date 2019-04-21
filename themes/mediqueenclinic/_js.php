@@ -18,7 +18,7 @@
 					"icon": " <img src='themes/mediqueenclinic/images/icon_word-balloon-speak2.png' alt=''>",
 				},
 				{
-					"url": "#",
+					"url": "https://line.me/R/ti/p/%40mediqueen",
 					"bgcolor": "#00c300",
 					"color": "#ffffff",
 					"icon": "<img src='themes/mediqueenclinic/images/widget_icon_line.png' alt=''>",
@@ -26,7 +26,7 @@
 					"title": "Add Line"
 				},
 				{
-					"url": "#",
+					"url": "http://m.me/MediqueenClinic",
 					"bgcolor": "#2173f3",
 					"color": "#ffffff",
 					"icon": "<img src='themes/mediqueenclinic/images/icon_messenger.png' alt=''>",

@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<base href="<?php echo base_url(); ?>" />
+		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+    	<?php header('Access-Control-Allow-Origin: *'); ?>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
 		<title><?php echo $template['title']; ?></title>
 		<link rel="stylesheet" href="media/css/reset.css" type="text/css" media="screen" charset="utf-8" />

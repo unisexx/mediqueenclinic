@@ -15,7 +15,7 @@
             <div class="leftmenu">
                 <ul>
                     <?php foreach($rs as $key=>$row):?>
-                        <li class=""><a href="services/category/<?php echo $row->id?>"><?php echo $row->name_th?></a></li>
+                        <li class=""><a href="services/category/<?php echo $row->slug?>"><?php echo $row->name_th?></a></li>
                     <?php endforeach;?>
                     <li class="active"><a href="products">SKIN CARE PRODUCTS</a></li>
                 </ul>
