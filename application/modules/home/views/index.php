@@ -177,6 +177,8 @@
     </div>
 </div>
 <!-- END row Promotions -->
+
+
 <div class="clearfix tall2"></div>
 <div class="row" id="margin-doctor">
     <div class="col-sm-12 text-center">
@@ -224,6 +226,64 @@
     </div>
 </div>
 <!-- END Slide Doctor -->
+
+
+
+<!-- <div class="container con-width"> -->
+    <!-- รีวิว facebook -->
+    <div class="clearfix tall2"></div>
+    <div class="row" id="margin-doctor">
+        <div class="col-sm-12 text-center">
+            <div class="title">เสียงตอบรับจากลูกค้า</div>
+            <div class="col-sm-3 line01"><img src="themes/mediqueenclinic/images/icon-line01.jpg" alt="" width="28" height="16"></div>
+        </div>
+    </div>
+    <div class="clearfix tall2"></div>
+    <!-- START Slide Facebook -->
+    <div class="carousel slide" data-ride="carousel" id="fbreview">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col col-lg-4 doctor">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMediqueenClinic%2Fposts%2F2589708254376101&width=500" height="179" width="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                    <div class="col col-lg-4 doctor">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMediqueenClinic%2Fposts%2F2586411184705808&width=500" width="500" height="179" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                    <div class="col col-lg-4 doctor">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMediqueenClinic%2Fposts%2F2560969367249990&width=500" width="500" height="179" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col col-lg-4 doctor">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMediqueenClinic%2Fposts%2F1696634660350136&width=500" width="500" height="186" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                    <div class="col col-lg-4 doctor">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMediqueenClinic%2Fposts%2F1557379684275635&width=500" width="500" height="157" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                    <div class="col col-lg-4 doctor">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMediqueenClinic%2Fposts%2F1548303631849907&width=500" width="500" height="179" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#fbreview" role="button" data-slide="prev">
+                <img src="themes/mediqueenclinic/images/arrow-doctor-left.png" class="arrow-service-left">
+            </a>
+            <a class="carousel-control-next text-faded" href="#fbreview" role="button" data-slide="next">
+                <img src="themes/mediqueenclinic/images/arrow-doctor-right.png" class="arrow-service-right">
+            </a>
+        </div>
+    </div>
+    <!-- END Slide Facebook -->
+<!-- </div> -->
+
+
+
+
+
+
 <div class="clearfix tall2"></div>
 <div class="row" id="margin-doctor">
     <div class="col-sm-12 text-center">
@@ -337,10 +397,10 @@
             <div class="follow">
                 <ul style="padding:0;margin-top: 10px;">
                     <li>Follow us on:</li>
-                    <li><a href="#"><img src='themes/mediqueenclinic/images/social-icon-facebook.jpg' alt=''></a></li>
-                    <li><a href="#"><img src='themes/mediqueenclinic/images/social-icon-twitter.jpg' alt=''></a></li>
-                    <li><a href="#"><img src='themes/mediqueenclinic/images/social-icon-insta.jpg' alt=''></a></li>
-                    <li><a href="#"><img src='themes/mediqueenclinic/images/social-icon-youtube.jpg' alt=''></a></li>
+                    <li><a href="https://www.facebook.com/MediqueenClinic"><img src='themes/mediqueenclinic/images/social-icon-facebook.jpg' alt=''></a></li>
+                    <li><a href="https://twitter.com/MediqueenC"><img src='themes/mediqueenclinic/images/social-icon-twitter.jpg' alt=''></a></li>
+                    <li><a href="https://www.instagram.com/mediqueen_clinic/"><img src='themes/mediqueenclinic/images/social-icon-insta.jpg' alt=''></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCQIrtzXK3_Oly1VTnVBMx1w"><img src='themes/mediqueenclinic/images/social-icon-youtube.jpg' alt=''></a></li>
                 </ul>
             </div>
         </div>
