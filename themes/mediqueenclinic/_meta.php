@@ -48,3 +48,8 @@ gtag('js', new Date());
 
 gtag('config', 'UA-138862151-1'); 
 </script>
+
+
+<!-- facebook sdk -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v3.2&appId=532330300263938&autoLogAppEvents=1"></script>

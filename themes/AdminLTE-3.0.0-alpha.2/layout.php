@@ -3,7 +3,7 @@
 	<head>
         <base href="<?php echo base_url(); ?>" />
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
-    <?php header('Access-Control-Allow-Origin: *'); ?>
+        <?php header('Access-Control-Allow-Origin: *'); ?>
 		<meta charset="utf-8">
   		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title><?php echo $template['title']; ?></title>

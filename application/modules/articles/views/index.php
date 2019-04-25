@@ -53,6 +53,10 @@
                 <?php endforeach;?>
 
             </div>
+
+            <hr>
+            <!-- facebook comment -->
+            <div class="fb-comments" data-href="https://<?php echo $_SERVER['HTTP_HOST']?><?php echo $_SERVER['REQUEST_URI']?>" data-width="100%" data-numposts="5"></div>
         </div>
     </div>
 </div>

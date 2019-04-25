@@ -245,27 +245,84 @@
             <div class="carousel-item active">
                 <div class="row">
                     <div class="col col-lg-4 doctor">
-                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMediqueenClinic%2Fposts%2F2589708254376101&width=500" height="179" width="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjun.oon.140%2Fposts%2F107977577061738&width=450" width="450" height="167" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                     </div>
                     <div class="col col-lg-4 doctor">
-                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMediqueenClinic%2Fposts%2F2586411184705808&width=500" width="500" height="179" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D111235276723925%26id%3D100035123583098&width=450" width="450" height="167" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                     </div>
                     <div class="col col-lg-4 doctor">
-                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMediqueenClinic%2Fposts%2F2560969367249990&width=500" width="500" height="179" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpat.phattharin.5%2Fposts%2F121645402338389&width=450" width="450" height="189" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="row">
                     <div class="col col-lg-4 doctor">
-                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMediqueenClinic%2Fposts%2F1696634660350136&width=500" width="500" height="186" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMediqueenClinic%2Fposts%2F2589708254376101&width=450" height="179" width="450" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                     </div>
                     <div class="col col-lg-4 doctor">
-                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMediqueenClinic%2Fposts%2F1557379684275635&width=500" width="500" height="157" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMediqueenClinic%2Fposts%2F2586411184705808&width=450" width="450" height="179" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                     </div>
                     <div class="col col-lg-4 doctor">
-                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMediqueenClinic%2Fposts%2F1548303631849907&width=500" width="500" height="179" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMediqueenClinic%2Fposts%2F2560969367249990&width=450" width="450" height="179" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                     </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col col-lg-4 doctor">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMediqueenClinic%2Fposts%2F1696634660350136&width=450" width="450" height="186" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                    <div class="col col-lg-4 doctor">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMediqueenClinic%2Fposts%2F1557379684275635&width=450" width="450" height="157" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                    <div class="col col-lg-4 doctor">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMediqueenClinic%2Fposts%2F1548303631849907&width=450" width="450" height="179" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col col-lg-4 doctor">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fnongying.indy.583%2Fposts%2F106956167162555&width=450" width="450" height="189" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                    <div class="col col-lg-4 doctor">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmar.mu.3954546%2Fposts%2F115632306288722&width=450" width="450" height="167" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D1265989790222880%26id%3D100004356138057&width=450" width="450" height="167" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col col-lg-4 doctor">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fying.tonhom.94%2Fposts%2F122027848972238&width=450" width="450" height="167" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                    <div class="col col-lg-4 doctor">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D112672266579402%26id%3D100035098868724&width=450" width="450" height="167" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Feiw.kanya.5%2Fposts%2F129046921550424&width=450" width="450" height="145" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col col-lg-4 doctor">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fkimmy.jiramet%2Fposts%2F132055964593425&width=450" width="450" height="167" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                    <div class="col col-lg-4 doctor">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsow.na.10%2Fposts%2F113596843162238&width=450" width="450" height="167" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D156550155374803%26id%3D100030594575426&width=450" width="450" height="167" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col col-lg-4 doctor">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fnacanxngtnhxm%2Fposts%2F123713372130939&width=450" width="450" height="167" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                    <div class="col col-lg-4 doctor">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D110932853422285%26id%3D100035167128553&width=450" width="450" height="167" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D126449681815083%26id%3D100033501556631&width=450" width="450" height="167" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#fbreview" role="button" data-slide="prev">

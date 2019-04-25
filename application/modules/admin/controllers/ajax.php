@@ -1,5 +1,5 @@
 <?php
-class Ajax extends Admin_Controller {
+class Ajax extends Public_Controller {
 
 	function __construct()
 	{
