@@ -41,6 +41,7 @@
                 <?php foreach($articles as $key=>$row):?>
                 <div class="tab-pane container <?php echo $key==0 ? 'active' : ''?>" id="tab-article-<?php echo $key?>">
                     <div class="title-article"><?php echo $row->{'title_'.@$this->session->userdata('lang')}?></div><br>
+                    <small>โพสต์เมื่อ : <?php echo mysql_to_th($row->created)?></small>
                     <div class="row">
                         <img src="uploads/article/<?php echo $row->{'img_'.@$this->session->userdata('lang')}?>" class="col-md-5 rounded img-meso float-left img-fluid" alt="<?php echo $row->{'title_'.@$this->session->userdata('lang')}?>" style="height:100% ;">
                         
