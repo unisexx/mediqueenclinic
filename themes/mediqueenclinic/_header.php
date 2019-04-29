@@ -1,6 +1,10 @@
 <div class="row">
     <div class="col-lg-3 col-sm-4 col-xs-12">
-        <div class="logo"><img src="themes/mediqueenclinic/images/logo.png" alt=""></div>
+        <div class="logo">
+            <img src="themes/mediqueenclinic/images/logo.png" alt="">
+            <a href="home/lang/th"><img style="vertical-align: bottom;" src="themes/mediqueenclinic/images/flag_thai.jpg"></a>
+            <a href="home/lang/en"><img style="vertical-align: bottom;" src="themes/mediqueenclinic/images/flag_eng.jpg"></a>
+        </div>
     </div>
     <div class="col-lg-9 col-sm-8 col-xs-12">
         <img src="themes/mediqueenclinic/images/slide_page01.jpg" class="d-block w-100" alt="...">
