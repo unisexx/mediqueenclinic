@@ -41,7 +41,15 @@
                 <?php foreach($articles as $key=>$row):?>
                 <div class="tab-pane container <?php echo $key==0 ? 'active' : ''?>" id="tab-article-<?php echo $key?>">
                     <div class="title-article"><?php echo $row->{'title_'.@$this->session->userdata('lang')}?></div><br>
-                    <small>โพสต์เมื่อ : <?php echo mysql_to_th($row->created)?></small>
+                    <small class="float-right">โพสต์เมื่อ : <?php echo mysql_to_th($row->created)?></small>
+                    
+                    
+                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                    <div class="addthis_inline_share_toolbox_ymmj"></div>
+                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50262e7e6282cf9d"></script>
+
+
                     <div class="row">
                         <img src="uploads/article/<?php echo $row->{'img_'.@$this->session->userdata('lang')}?>" class="col-md-5 rounded img-meso float-left img-fluid" alt="<?php echo $row->{'title_'.@$this->session->userdata('lang')}?>" style="height:100% ;">
                         

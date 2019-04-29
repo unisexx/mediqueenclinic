@@ -74,8 +74,9 @@
         </div>
     </div>
     <div class="col-sm-3">
-        <form class="form-inline my-2 my-lg-0 search-input">
-            <input class="form-control mr-sm-2 search-box" type="search" placeholder="<?php echo lang('search')?>" aria-label="Search">
+        <form action="https://www.google.com/search" class="form-inline my-2 my-lg-0 search-input" method="get" name="searchform" target="_blank">
+            <input name="sitesearch" type="hidden" value="mediqueenclinic.com">
+            <input autocomplete="on" class="form-control mr-sm-2 search-box" name="q" placeholder="<?php echo lang('search')?>" type="text" style="padding-left:25px;">
         </form>
     </div>
 </div>
