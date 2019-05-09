@@ -36,6 +36,13 @@
         </li> -->
 
         <li class="nav-item">
+            <a href="admin/popups/form/1" class="nav-link">
+                <i class="nav-icon fa fa-th"></i>
+                <p>POPUP</p>
+            </a>
+        </li>
+
+        <li class="nav-item">
             <a href="admin/hilights" class="nav-link">
                 <i class="nav-icon fa fa-th"></i>
                 <p>HILIGHTS</p>

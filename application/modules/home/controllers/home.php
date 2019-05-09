@@ -10,6 +10,9 @@ class Home extends Public_Controller {
 	{
 		$this->template->set_layout('home');
 
+		$data['popup'] = new popup();
+		$data['popup'] = $data['popup']->where('status','public')->order_by('id','desc')->limit(1)->get();
+
 		$data['contact'] = new contact();
 		$data['contact'] = $data['contact']->order_by('id','desc')->limit(1)->get();
 

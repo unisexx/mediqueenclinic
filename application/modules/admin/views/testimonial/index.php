@@ -27,7 +27,7 @@
                     <th style="width: 10px">#</th>
                     <th>สถานะ</th>
                     <th>รูป</th>
-                    <th>ชื่อลูกค้า</th>
+                    <th>หัวข้อ</th>
                     <th width="150">จัดการ</th>
                 </tr>
                 <?foreach($rs as $key=>$row):?>
@@ -36,10 +36,10 @@
                     <td>
                         <input class="switch_status" type="checkbox" data-toggle="toggle" data-switch-id="<?php echo $row->id?>" <?php echo $row->status == 'public' ? 'checked' : '' ;?>>
                     </td>
-                    <td><?if($row->image):?><img src="uploads/testimonial/<?=$row->image?>" width="90"><?endif;?></td>
+                    <td><?if($row->img_th):?><img src="uploads/testimonial/<?=$row->img_th?>" width="300"><?endif;?></td>
                     <td>
-                        <div>ภาษาไทย :: <?php echo $row->name_th?></div>
-                        <div>ภาษาอังกฤษ :: <?php echo $row->name_en?></div>
+                        <div>ภาษาไทย :: <?php echo $row->title_th?></div>
+                        <div>ภาษาอังกฤษ :: <?php echo $row->title_en?></div>
                     </td>
                     <td>
                         <a href="admin/testimonials/form/<?=$row->id?>">

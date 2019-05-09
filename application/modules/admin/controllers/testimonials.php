@@ -26,13 +26,21 @@ class Testimonials extends Admin_Controller {
 		if($_POST){
 
 			$rs = new testimonial($id);
-			
-			if($_FILES['imgUpload']['name'])
+
+			if($_FILES['img_th']['name'])
 			{
 				if($rs->id){
-					$rs->delete_file($rs->id,'uploads/testimonial','imgUpload');
+					$rs->delete_file($rs->id,'uploads/testimonial','img_th');
 				}
-				$_POST['image'] = $rs->upload($_FILES['imgUpload'],'uploads/testimonial/');
+				$_POST['img_th'] = $rs->upload($_FILES['img_th'],'uploads/testimonial/');
+			}
+			
+			if($_FILES['img_en']['name'])
+			{
+				if($rs->id){
+					$rs->delete_file($rs->id,'uploads/testimonial','img_en');
+				}
+				$_POST['img_en'] = $rs->upload($_FILES['img_en'],'uploads/testimonial/');
 			}
 			
 			$rs->from_array($_POST);

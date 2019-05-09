@@ -1,3 +1,15 @@
+<!-- popup -->
+<?php if($popup->img_th != ''):?>
+<div style="display:none;">
+    <a class="popup-link lightbox" href="uploads/popup/<?php echo $popup->img_th?>" data-lightbox="popup-1">
+        <img src="uploads/popup/<?php echo $popup->img_th?>" alt="โปรโมชั่น">
+    </a>
+</div>
+<?php endif;?>
+
+
+
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-12 col-sm-12 col-xs-12" style="padding:0; ">

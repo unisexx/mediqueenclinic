@@ -1,3 +1,9 @@
+<style>
+.testimonial_title:hover{
+    text-decoration:none;
+}
+</style>
+
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb bread">
         <li class="breadcrumb-item"><a href="home"><?php echo lang('h_home')?></a></li>
@@ -8,22 +14,18 @@
 <div class="title_page"><?php echo lang('h_testimonial')?></div>
 <div class="title_page2"><?php echo lang('patient')?></div>
 <div class="clearfix tall2"></div>
-<div class="container">
-    <div class="row">
 
-        <?php foreach($rs as $row):?>
-        <div class="col-sm-6 media1">
-            <div class="media">
-                <img class="align-self-start mr-3 pic-tester" src="uploads/testimonial/<?php echo $row->image?>" alt="...">
-                <div class="name_tester title-tester"><?php echo $row->{'name_'.@$this->session->userdata('lang')}?></div>
-                <div class="media-body box-tester">
-                    <p><img src="themes/mediqueenclinic/images/quote_icon.png"><br>
-                        <?php echo $row->{'detail_'.@$this->session->userdata('lang')}?></p>
-                </div>
-            </div>
-        </div>
-        <?php endforeach;?>
+<div class="d-flex flex-wrap">
+    <?php foreach($rs as $row):?>
 
-        <div class="container" align="right"><?=$rs->pagination();?></div>
+    <div class="col-md-4 flex-fill" style="padding-bottom:30px;">
+        <a class="testimonial_title" href="testimonials/view/<?php echo $row->id?>">
+            <img class="img-fluid" src="uploads/testimonial/<?php echo $row->{'img_'.@$this->session->userdata('lang')}?>" alt="<?php echo $row->{'title_'.@$this->session->userdata('lang')}?>">
+            <h3 style="margin-top:10px; font-size:20px; color:#9001a3;"><?php echo $row->{'title_'.@$this->session->userdata('lang')}?></h3>
+        </a>
     </div>
+
+    <?php endforeach;?>
 </div>
+
+<div class="container" align="right"><?=$rs->pagination();?></div>

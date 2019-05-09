@@ -66,3 +66,23 @@ $(document).ready(function(){
 	});
 });
 </script>
+
+<!-- testimonial -->
+<script>
+$(document).ready(function(){
+	$('.testimonial_detail img').attr("class", "img-fluid");
+});
+</script>
+
+<!-- popup -->
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+</script>
+<script>
+$(document).ready(function () {
+	$('a.lightbox').trigger('click');
+});
+</script>
