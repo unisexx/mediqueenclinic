@@ -22,7 +22,7 @@
         <div class="card-body">
 
             <div class="form-group">
-                <label for="exampleInputFile">อัพโหลดรูป</label>
+                <label for="exampleInputFile">อัพโหลดรูป (ขนาดที่เหมาะสมกว้าง 800 px)</label>
                 <?if($rs->img_th):?><div><img src="uploads/popup/<?=$rs->img_th?>"></div><?endif;?>
                 <div class="input-group">
                     <input type="file" name="img_th" class="form-control" id="fileField" />
