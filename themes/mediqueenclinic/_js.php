@@ -33,14 +33,14 @@
 					"target": "_blank",
 					"title": "แชทผ่าน Facebook"
 				},
-				{
-					"url": "https://www.instagram.com/mediqueen_clinic/",
-					"bgcolor": "#e94c88",
-					"color": "#ffffff",
-					"icon": "<img src='themes/mediqueenclinic/images/icon-instagram.png' alt=''>",
-					"target": "_blank",
-					"title": "instagram"
-				},
+				// {
+				// 	"url": "https://www.instagram.com/mediqueen_clinic/",
+				// 	"bgcolor": "#e94c88",
+				// 	"color": "#ffffff",
+				// 	"icon": "<img src='themes/mediqueenclinic/images/icon-instagram.png' alt=''>",
+				// 	"target": "_blank",
+				// 	"title": "instagram"
+				// },
 				{
 					"url": "tel:+66953626235",
 					"bgcolor": "#ec4521",
