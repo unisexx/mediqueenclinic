@@ -48,7 +48,7 @@
 
             <div class="form-group">
                 <label for="exampleInputFile">อัพโหลดรูปประกอบบทความ (ภาษาไทย) - กว้าง 600 px</label>
-                <?if($rs->img_th):?><div><img src="uploads/article/<?=$rs->img_th?>" width="150"></div><?endif;?>
+                <?if($rs->img_th):?><div class="img_preview"><img src="uploads/article/<?=$rs->img_th?>" width="150"> <button class="del_img" data-name="img_th">ลบรูปนี้</button></div><?endif;?>
                 <div class="input-group">
                     <input type="file" name="img_th" class="form-control" id="fileField" />
                 </div>
@@ -56,7 +56,7 @@
 
             <div class="form-group">
                 <label for="exampleInputFile">อัพโหลดรูปประกอบบทความ (ภาษาอังกฤษ) - กว้าง 600 px</label>
-                <?if($rs->img_en):?><div><img src="uploads/article/<?=$rs->img_en?>" width="150"></div><?endif;?>
+                <?if($rs->img_en):?><div class="img_preview"><img src="uploads/article/<?=$rs->img_en?>" width="150"> <button class="del_img" data-name="img_en">ลบรูปนี้</button></div><?endif;?>
                 <div class="input-group">
                     <input type="file" name="img_en" class="form-control" id="fileField" />
                 </div>
@@ -92,5 +92,20 @@ tinymce.init({
    ,relative_urls:false,
    remove_script_host:false
  });
+</script>
+
+<script>
+$('document').ready(function(){
+    $('.del_img').click(function(){
+        event.preventDefault();
+        // console.log( $(this).data('name') );
+
+        if (confirm('ยืนยันการลบรูป?')) {
+            $("form").append('<input name="'+ $(this).data('name') +'" type="hidden" value="">');
+            $(this).closest('.img_preview').remove();
+        }
+
+    });
+});
 </script>
 <!-- /.content -->
