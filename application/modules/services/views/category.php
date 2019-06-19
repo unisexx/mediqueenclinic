@@ -15,38 +15,39 @@
             <div class="leftmenu">
                 <ul>
                     <?php foreach($rs as $key=>$row):?>
-                    <li class="<?php echo $slug == $row->slug ? 'active' : '' ?>"><a href="services/category/<?php echo $row->slug?>"><?php echo $row->{'name_'.@$this->session->userdata('lang')}?></a></li>
+                    <li class="<?php echo $slug == $row->slug ? 'active' : '' ?>"><a href="services/index/<?php echo $row->slug?>"><?php echo $row->{'name_'.@$this->session->userdata('lang')}?></a></li>
                     <?php endforeach;?>
                     <li><a href="products"><?php echo lang('product')?></a></li>
                 </ul>
             </div>
         </div>
         <!-- END COL Leftmenu -->
+
+        
         <!-- START COL TAB -->
         <div class="col-lg-10 col-sm-9 col-xs-12 box-tab">
-            <!-- Nav tabs -->
+
+            <!-- Service Title -->
             <ul class="nav">
                 <?php foreach($services as $key => $row):?>
                 <li class="grounded-radiants-box">
-                    <a class="grounded-radiants <?php echo $key == 0 ? 'active' : '' ?>" data-toggle="tab" href="#tab-<?php echo $key?>"><span class="btn-service"><?php echo $row->{'title_'.@$this->session->userdata('lang')}?></span><br>
+                    <a class="grounded-radiants <?php echo $row->id == $service->id ? 'active' : '' ?>" href="services/category/<?php echo $slug?>/<?php echo $row->id?>"><span class="btn-service"><?php echo $row->{'title_'.@$this->session->userdata('lang')}?></span><br>
                     <?php echo $row->{'subtitle_'.@$this->session->userdata('lang')}?></a>
                 </li>
                 <?php endforeach;?>
             </ul>
 
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <?php foreach($services as $key => $row):?>
-                <div class="tab-pane <?php echo $key == 0 ? 'active' : '' ?> container" id="tab-<?php echo $key?>">
+            <!-- Details -->
+            <div>
+                <div>
                     <!-- <div class="col-sm-6 col-xs-12 meso"> -->
-                        <div class="title-meso"><?php echo $row->{'title_'.@$this->session->userdata('lang')}?></div>
-                        <?php echo $row->{'detail_'.@$this->session->userdata('lang')}?>
+                    <div class="title-meso"><?php echo $service->{'title_'.@$this->session->userdata('lang')}?></div>
+                    <?php echo $service->{'detail_'.@$this->session->userdata('lang')}?>
                     <!-- </div> -->
                 </div>
-                <?php endforeach;?>
             </div>
         </div>
-        <!-- END COL TAB -->
+        <!-- Details -->
 
     </div>
 
