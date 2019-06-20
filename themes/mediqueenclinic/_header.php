@@ -38,9 +38,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="doctors"><?php echo lang('h_doctor')?></a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="testimonials"><?php echo lang('h_testimonial')?></a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="contacts"><?php echo lang('h_contact')?></a>
                     </li>
