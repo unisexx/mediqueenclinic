@@ -53,21 +53,15 @@
                     <div class="row">
 
                         <!-- ถ้าไม่มีรูปประกอบบทความ -->
-                        <?php if( empty($row->{'img_'.@$this->session->userdata('lang')}) ):?>
+                        <?php if( !empty($row->{'img_'.@$this->session->userdata('lang')}) ):?>
 
-                            <div class="col-md-6 num-pdo float-left align-self-center">
-                                <?php echo $row->{'detail_'.@$this->session->userdata('lang')}?>
-                            </div>
-
-                        <?php else:?>
-
-                            <img src="uploads/article/<?php echo $row->{'img_'.@$this->session->userdata('lang')}?>" class="col-md-5 rounded img-meso float-left img-fluid" alt="<?php echo $row->{'title_'.@$this->session->userdata('lang')}?>" style="height:100% ;">
-                            
-                            <div class="col-md-6 num-pdo float-left align-self-center">
-                                <?php echo $row->{'detail_'.@$this->session->userdata('lang')}?>
-                            </div>
+                            <img src="uploads/article/<?php echo $row->{'img_'.@$this->session->userdata('lang')}?>" class="rounded img-fluid" alt="<?php echo $row->{'title_'.@$this->session->userdata('lang')}?>">
 
                         <?php endif;?>
+                        
+                        <div class="col-md-12 num-pdo align-self-center">
+                            <?php echo $row->{'detail_'.@$this->session->userdata('lang')}?>
+                        </div>
 
                     </div>
                 </div>
