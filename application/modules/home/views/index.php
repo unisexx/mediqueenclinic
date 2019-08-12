@@ -371,10 +371,10 @@
             <div class='carousel-outer'>
                 <!-- me art lab slider -->
                 <div class='carousel-inner inner-review'>
-                    <?php foreach($review_image->review_image_detail->get() as $key => $row):?>
+                    <?php foreach($review as $key => $row):?>
                     <div class='carousel-item <?php echo $key == 0 ? 'active' : ''; ?>'>
-                        <a href="uploads/review_image/<?php echo $row->review_image_id?>/<?php echo $row->image?>" data-toggle="lightbox" class="img-review">
-                            <img src='uploads/review_image/<?php echo $row->review_image_id?>/<?php echo $row->image?>' alt=''>
+                        <a href="reviews/view/<?php echo $row->id?>" class="img-review">
+                            <img src='uploads/review/<?php echo $row->{'img_'.@$this->session->userdata('lang')}?>' alt=''>
                         </a>
                     </div>
                     <?php endforeach;?>
@@ -393,14 +393,15 @@
 
             <!-- thumb -->
             <ol class='carousel-indicators thumb-review'>
-                <?php foreach($review_image->review_image_detail->get() as $key => $row):?>
+                <?php foreach($review as $key => $row):?>
                     <li data-target='#carousel-custom' data-slide-to='<?php echo $key?>' class='<?php echo $key == 0 ? 'active' : ''; ?>'>
-                        <img src='uploads/review_image/<?php echo $row->review_image_id?>/<?php echo $row->image?>' alt=''/>
+                        <img src='uploads/review/<?php echo $row->{'img_'.@$this->session->userdata('lang')}?>' alt=''/>
                     </li>
                 <?php endforeach;?>
             </ol>
         </div>
-        <a href="review_images" class="a-review"><?php echo lang('review_all')?></a>
+        <!-- <a href="review_images" class="a-review"><?php echo lang('review_all')?></a> -->
+        <a href="reviews/categories" class="a-review"><?php echo lang('review_all')?></a>
         <!-- END Review Picture Slide -->
 
 

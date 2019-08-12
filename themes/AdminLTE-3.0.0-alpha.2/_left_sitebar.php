@@ -71,6 +71,20 @@
         </li>
 
         <li class="nav-item">
+            <a href="admin/review_categories" class="nav-link">
+                <i class="nav-icon fa fa-th"></i>
+                <p>REVIEWS CATEGORIES</p>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a href="admin/reviews" class="nav-link">
+                <i class="nav-icon fa fa-th"></i>
+                <p>REVIEWS</p>
+            </a>
+        </li>
+
+        <li class="nav-item">
             <a href="admin/review_images" class="nav-link">
                 <i class="nav-icon fa fa-th"></i>
                 <p>REVIEWS IMAGE</p>

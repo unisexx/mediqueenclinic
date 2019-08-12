@@ -37,6 +37,9 @@ class Home extends Public_Controller {
 		$data['review_video'] = new review_video();
 		$data['review_video'] = $data['review_video']->where('status','public')->order_by('id','desc')->get();
 
+		$data['review'] = new review();
+		$data['review'] = $data['review']->where('status','public')->order_by('id','desc')->get();
+
 		$this->template->build('index',$data);
 	}
 
