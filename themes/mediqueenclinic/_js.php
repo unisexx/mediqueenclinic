@@ -21,7 +21,7 @@
 					"url": "https://line.me/R/ti/p/%40mediqueen",
 					"bgcolor": "#00c300",
 					"color": "#ffffff",
-					"icon": "<img src='themes/mediqueenclinic/images/widget_icon_line.png' alt=''>",
+					"icon": "<img src='themes/mediqueenclinic/images/widget_icon_line.png' alt='' onclick='return gtag_report_conversion_line(\"https://line.me/R/ti/p/%40mediqueen\");' >",
 					"target": "_blank",
 					"title": "Add Line"
 				},
@@ -29,7 +29,7 @@
 					"url": "http://m.me/MediqueenClinic",
 					"bgcolor": "#2173f3",
 					"color": "#ffffff",
-					"icon": "<img src='themes/mediqueenclinic/images/icon_messenger.png' alt=''>",
+					"icon": "<img src='themes/mediqueenclinic/images/icon_messenger.png' alt='' onclick='return gtag_report_conversion_facebook(\"http://m.me/MediqueenClinic\");' >",
 					"target": "_blank",
 					"title": "แชทผ่าน Facebook"
 				},
@@ -45,7 +45,7 @@
 					"url": "tel:+66953626235",
 					"bgcolor": "#ec4521",
 					"color": "#ffffff",
-					"icon": "<img src='themes/mediqueenclinic/images/icon-call.png' alt=''>",
+					"icon": "<img src='themes/mediqueenclinic/images/icon-call.png' alt='' onclick='return gtag_report_conversion_call(\"tel:+66953626235\");' >",
 					"target": "_blank",
 					"title": "โทร. 095-3626235"
 				},

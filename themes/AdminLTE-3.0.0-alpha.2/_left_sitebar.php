@@ -84,12 +84,12 @@
             </a>
         </li>
 
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a href="admin/review_images" class="nav-link">
                 <i class="nav-icon fa fa-th"></i>
                 <p>REVIEWS IMAGE</p>
             </a>
-        </li>
+        </li> -->
 
         <li class="nav-item">
             <a href="admin/review_videos" class="nav-link">
