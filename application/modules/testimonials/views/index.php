@@ -15,17 +15,24 @@
 <div class="title_page2"><?php echo lang('patient')?></div>
 <div class="clearfix tall2"></div>
 
-<div class="d-flex flex-wrap">
+<div class="container">
+<div class="row">
+
     <?php foreach($rs as $row):?>
-
-    <div class="col-md-4 flex-fill" style="padding-bottom:30px;">
-        <a class="testimonial_title" href="testimonials/view/<?php echo $row->id?>">
-            <img class="img-fluid" src="uploads/testimonial/<?php echo $row->{'img_'.@$this->session->userdata('lang')}?>" alt="<?php echo $row->{'title_'.@$this->session->userdata('lang')}?>">
-            <h3 style="margin-top:10px; font-size:20px; color:#9001a3;"><?php echo $row->{'title_'.@$this->session->userdata('lang')}?></h3>
-        </a>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="news-image">
+            <div class="news-img">
+                <img src="uploads/testimonial/<?php echo $row->{'img_'.@$this->session->userdata('lang')}?>" alt="<?php echo $row->{'title_'.@$this->session->userdata('lang')}?>" class="img-fluid">
+            </div>
+            <div class="news-head">
+                <a href="testimonials/view/<?php echo $row->id?>"><?php echo $row->{'title_'.@$this->session->userdata('lang')}?></a>
+                <p>มั่นใจ ในความสวยแบบที่เป็นตัวเอง</p>
+            </div>
+        </div>
     </div>
-
     <?php endforeach;?>
+    
 </div>
 
 <div class="container" align="right"><?=$rs->pagination();?></div>
+</div>
