@@ -31,6 +31,9 @@ class Home extends Public_Controller {
 		$data['doctor'] = new doctor();
 		$data['doctor'] = $data['doctor']->where('status','public')->order_by('id','desc')->get();
 
+		$data['review_fb'] = new review_fb();
+		$data['review_fb'] = $data['review_fb']->where('status','public')->order_by('id','desc')->get();
+
 		$data['review_image'] = new review_image();
 		$data['review_image'] = $data['review_image']->where('status','public')->order_by('id','desc')->limit(1)->get();
 
@@ -55,4 +58,3 @@ class Home extends Public_Controller {
 		// phpinfo();
 	}
 }
-?>

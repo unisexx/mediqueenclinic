@@ -2,17 +2,14 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="home" class="brand-link">
-    <img src="themes/AdminLTE-3.0.0-alpha.2/dist/img/AdminLTELogo.png"
-        alt="AdminLTE Logo"
-        class="brand-image img-circle elevation-3"
-        style="opacity: .8">
-    <span class="brand-text font-weight-light">Mediqueen</span>
+        <img src="themes/AdminLTE-3.0.0-alpha.2/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light">Mediqueen</span>
     </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
-    <!-- Sidebar user (optional) -->
-    <!-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <!-- Sidebar user (optional) -->
+        <!-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
         <img src="themes/AdminLTE-3.0.0-alpha.2/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
@@ -21,157 +18,164 @@
         </div>
     </div> -->
 
-    <!-- Sidebar Menu -->
-    <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-        <!-- Add icons to the links using the .nav-icon class
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <!-- Add icons to the links using the .nav-icon class
             with font-awesome or any other icon font library -->
-        
-        <li class="nav-header">หน้าแรก</li>
-        <!-- <li class="nav-item">
+
+                <li class="nav-header">หน้าแรก</li>
+                <!-- <li class="nav-item">
             <a href="../widgets.html" class="nav-link">
                 <i class="nav-icon fa fa-th"></i>
                 <p>ที่อยู่</p>
             </a>
         </li> -->
 
-        <li class="nav-item">
-            <a href="admin/popups/form/1" class="nav-link">
-                <i class="nav-icon fa fa-th"></i>
-                <p>POPUP</p>
-            </a>
-        </li>
+                <li class="nav-item">
+                    <a href="admin/popups/form/1" class="nav-link">
+                        <i class="nav-icon fa fa-th"></i>
+                        <p>POPUP</p>
+                    </a>
+                </li>
 
-        <li class="nav-item">
-            <a href="admin/hilights" class="nav-link">
-                <i class="nav-icon fa fa-th"></i>
-                <p>HILIGHTS</p>
-            </a>
-        </li>
+                <li class="nav-item">
+                    <a href="admin/hilights" class="nav-link">
+                        <i class="nav-icon fa fa-th"></i>
+                        <p>HILIGHTS</p>
+                    </a>
+                </li>
 
-        <li class="nav-item">
-            <a href="admin/service_categories" class="nav-link">
-                <i class="nav-icon fa fa-th"></i>
-                <p>SERVICE CATEGORIES</p>
-            </a>
-        </li>
+                <li class="nav-item">
+                    <a href="admin/service_categories" class="nav-link">
+                        <i class="nav-icon fa fa-th"></i>
+                        <p>SERVICE CATEGORIES</p>
+                    </a>
+                </li>
 
-        <li class="nav-item">
-            <a href="admin/promotion_lists" class="nav-link">
-                <i class="nav-icon fa fa-th"></i>
-                <p>PROMOTION LISTS</p>
-            </a>
-        </li>
-        
-        <li class="nav-item">
-            <a href="admin/promotion_hilights" class="nav-link">
-                <i class="nav-icon fa fa-th"></i>
-                <p>PROMOTION HILIGHTS</p>
-            </a>
-        </li>
+                <li class="nav-item">
+                    <a href="admin/promotion_lists" class="nav-link">
+                        <i class="nav-icon fa fa-th"></i>
+                        <p>PROMOTION LISTS</p>
+                    </a>
+                </li>
 
-        <li class="nav-item">
-            <a href="admin/review_categories" class="nav-link">
-                <i class="nav-icon fa fa-th"></i>
-                <p>REVIEWS CATEGORIES</p>
-            </a>
-        </li>
+                <li class="nav-item">
+                    <a href="admin/promotion_hilights" class="nav-link">
+                        <i class="nav-icon fa fa-th"></i>
+                        <p>PROMOTION HILIGHTS</p>
+                    </a>
+                </li>
 
-        <li class="nav-item">
-            <a href="admin/reviews" class="nav-link">
-                <i class="nav-icon fa fa-th"></i>
-                <p>REVIEWS</p>
-            </a>
-        </li>
+                <li class="nav-item">
+                    <a href="admin/review_categories" class="nav-link">
+                        <i class="nav-icon fa fa-th"></i>
+                        <p>REVIEWS CATEGORIES</p>
+                    </a>
+                </li>
 
-        <!-- <li class="nav-item">
+                <li class="nav-item">
+                    <a href="admin/reviews" class="nav-link">
+                        <i class="nav-icon fa fa-th"></i>
+                        <p>REVIEWS</p>
+                    </a>
+                </li>
+
+                <!-- <li class="nav-item">
             <a href="admin/review_images" class="nav-link">
                 <i class="nav-icon fa fa-th"></i>
                 <p>REVIEWS IMAGE</p>
             </a>
         </li> -->
 
-        <li class="nav-item">
-            <a href="admin/review_videos" class="nav-link">
-                <i class="nav-icon fa fa-th"></i>
-                <p>REVIEWS VIDEO</p>
-            </a>
-        </li>
+                <li class="nav-item">
+                    <a href="admin/review_videos" class="nav-link">
+                        <i class="nav-icon fa fa-th"></i>
+                        <p>REVIEWS VIDEO</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="admin/review_fbs" class="nav-link">
+                        <i class="nav-icon fa fa-th"></i>
+                        <p>REVIEWS FACEBOOK</p>
+                    </a>
+                </li>
 
 
-        <li class="nav-header">หน้าอื่นๆ</li>
-        <li class="nav-item">
-            <a href="admin/abouts/form/1" class="nav-link">
-                <i class="nav-icon fa fa-th"></i>
-                <p>ABOUT</p>
-            </a>
-        </li>
+                <li class="nav-header">หน้าอื่นๆ</li>
+                <li class="nav-item">
+                    <a href="admin/abouts/form/1" class="nav-link">
+                        <i class="nav-icon fa fa-th"></i>
+                        <p>ABOUT</p>
+                    </a>
+                </li>
 
-        <li class="nav-item">
-            <a href="admin/promotions" class="nav-link">
-                <i class="nav-icon fa fa-th"></i>
-                <p>PROMOTIONS</p>
-            </a>
-        </li>
+                <li class="nav-item">
+                    <a href="admin/promotions" class="nav-link">
+                        <i class="nav-icon fa fa-th"></i>
+                        <p>PROMOTIONS</p>
+                    </a>
+                </li>
 
-        <li class="nav-item">
-            <a href="admin/services" class="nav-link">
-                <i class="nav-icon fa fa-th"></i>
-                <p>SERVICES</p>
-            </a>
-        </li>
+                <li class="nav-item">
+                    <a href="admin/services" class="nav-link">
+                        <i class="nav-icon fa fa-th"></i>
+                        <p>SERVICES</p>
+                    </a>
+                </li>
 
-        <li class="nav-item">
-            <a href="admin/article_categories" class="nav-link">
-                <i class="nav-icon fa fa-th"></i>
-                <p>ARTICLE CATEGORIES</p>
-            </a>
-        </li>
+                <li class="nav-item">
+                    <a href="admin/article_categories" class="nav-link">
+                        <i class="nav-icon fa fa-th"></i>
+                        <p>ARTICLE CATEGORIES</p>
+                    </a>
+                </li>
 
-        <li class="nav-item">
-            <a href="admin/articles" class="nav-link">
-                <i class="nav-icon fa fa-th"></i>
-                <p>ARTICLES</p>
-            </a>
-        </li>
+                <li class="nav-item">
+                    <a href="admin/articles" class="nav-link">
+                        <i class="nav-icon fa fa-th"></i>
+                        <p>ARTICLES</p>
+                    </a>
+                </li>
 
-        <li class="nav-item">
-            <a href="admin/products" class="nav-link">
-                <i class="nav-icon fa fa-th"></i>
-                <p>SKIN CARE PRODUCTS</p>
-            </a>
-        </li>
+                <li class="nav-item">
+                    <a href="admin/products" class="nav-link">
+                        <i class="nav-icon fa fa-th"></i>
+                        <p>SKIN CARE PRODUCTS</p>
+                    </a>
+                </li>
 
-        <li class="nav-item">
-            <a href="admin/doctors" class="nav-link">
-                <i class="nav-icon fa fa-th"></i>
-                <p>DOCTORS</p>
-            </a>
-        </li>
+                <li class="nav-item">
+                    <a href="admin/doctors" class="nav-link">
+                        <i class="nav-icon fa fa-th"></i>
+                        <p>DOCTORS</p>
+                    </a>
+                </li>
 
-        <li class="nav-item">
-            <a href="admin/testimonials" class="nav-link">
-                <i class="nav-icon fa fa-th"></i>
-                <p>TESTIMONIAL</p>
-            </a>
-        </li>
+                <li class="nav-item">
+                    <a href="admin/testimonials" class="nav-link">
+                        <i class="nav-icon fa fa-th"></i>
+                        <p>TESTIMONIAL</p>
+                    </a>
+                </li>
 
-        <li class="nav-item">
-            <a href="admin/contacts/form/1" class="nav-link">
-                <i class="nav-icon fa fa-th"></i>
-                <p>CONTACT</p>
-            </a>
-        </li>
+                <li class="nav-item">
+                    <a href="admin/contacts/form/1" class="nav-link">
+                        <i class="nav-icon fa fa-th"></i>
+                        <p>CONTACT</p>
+                    </a>
+                </li>
 
-        <li class="nav-item">
-            <a href="admin/messages" class="nav-link">
-                <i class="nav-icon fa fa-th"></i>
-                <p>ส่งข้อความถึงเรา</p>
-            </a>
-        </li>
+                <li class="nav-item">
+                    <a href="admin/messages" class="nav-link">
+                        <i class="nav-icon fa fa-th"></i>
+                        <p>ส่งข้อความถึงเรา</p>
+                    </a>
+                </li>
 
 
-        <!-- <li class="nav-item has-treeview">
+                <!-- <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
             <i class="nav-icon fa fa-dashboard"></i>
             <p>
@@ -466,9 +470,9 @@
             <p>Informational</p>
             </a>
         </li> -->
-        </ul>
-    </nav>
-    <!-- /.sidebar-menu -->
+            </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
 </aside>
